@@ -1,0 +1,153 @@
+[2021-08-05 21:16:25,121] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-05 21:16:25,122] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-05 21:16:29,644] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 58850
+[2021-08-05 21:24:32,250] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-05 21:24:32,258] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<handle_client() done, defined at omega_server.py:79> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "omega_server.py", line 112, in <module>
+    asyncio.run(connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "omega_server.py", line 85, in handle_client
+    if rec.AcceptWaveform(data):
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 67, in AcceptWaveform
+    return _c.vosk_recognizer_accept_waveform(self._handle, data, len(data))
+KeyboardInterrupt
+[2021-08-05 21:24:36,737] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-05 21:24:36,738] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-05 21:24:42,094] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 58858
+[2021-08-05 21:24:44,482] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 21:24:44,484] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 21:24:45,282] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 21:24:45,285] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 21:24:45,287] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 21:24:45,462] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-05 21:24:45,464] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-05 21:24:45,618] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-05 21:24:45,678] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-05 21:24:45,680] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-05 21:24:45,711] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-05 21:24:45,713] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-05 21:24:45,744] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-05 21:24:45,746] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-05 21:24:45,790] [MainThread  ] [DEBUG]  [F] Final result: тестовая запись
+[2021-08-05 21:40:50,865] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-05 21:40:50,873] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<handle_client() done, defined at omega_server.py:79> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "omega_server.py", line 112, in <module>
+    asyncio.run(connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "omega_server.py", line 92, in handle_client
+    output = rec.PartialResult()
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 73, in PartialResult
+    return _ffi.string(_c.vosk_recognizer_partial_result(self._handle)).decode('utf-8')
+KeyboardInterrupt
+[2021-08-05 22:00:48,385] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-05 22:00:48,387] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-05 22:01:05,931] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 58868
+[2021-08-05 22:01:05,932] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:59> exception=NameError("name 'CHUNK' is not defined")>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 64, in handle_client
+    data = await reader.read(CHUNK)
+NameError: name 'CHUNK' is not defined
+[2021-08-05 22:01:12,835] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-05 22:02:31,521] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-05 22:02:31,522] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-05 22:10:30,497] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-05 22:10:30,498] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-05 22:10:37,234] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 58870
+[2021-08-05 22:10:37,779] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=NameError("name 'rec' is not defined")>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 72, in handle_client
+    if rec.AcceptWaveform(data):
+NameError: name 'rec' is not defined
+[2021-08-05 22:10:47,488] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-05 22:11:39,228] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-05 22:11:39,229] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-05 22:11:44,860] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 58872
+[2021-08-05 22:11:47,329] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 22:11:47,332] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 22:11:47,333] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 22:11:47,769] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 22:11:47,771] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 22:11:47,805] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 22:11:47,807] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-05 22:11:47,859] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-05 22:11:51,230] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:51,232] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:51,233] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:51,423] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:51,426] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:51,428] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:51,629] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:51,631] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:51,708] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:51,806] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:51,810] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:51,811] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:51,844] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:52,062] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:52,065] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:52,067] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-05 22:11:52,107] [MainThread  ] [DEBUG]  [F] Final result: омега включи свет
+[2021-08-05 22:11:54,919] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:54,922] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:54,923] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:55,225] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:55,227] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:55,229] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-05 22:11:55,547] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,551] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,627] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,646] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,650] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,652] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,693] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,902] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,906] [MainThread  ] [DEBUG]  [P] Partial result: омега выключи свет
+[2021-08-05 22:11:55,950] [MainThread  ] [DEBUG]  [F] Final result: омега выключи свет
+[2021-08-05 22:12:04,069] [MainThread  ] [DEBUG]  [P] Partial result: суть
+[2021-08-05 22:12:04,093] [MainThread  ] [DEBUG]  [P] Partial result: суть
+[2021-08-05 22:12:04,098] [MainThread  ] [DEBUG]  [P] Partial result: суть
+[2021-08-05 22:12:04,232] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,234] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,349] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,370] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,408] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,468] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,470] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,605] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,609] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,648] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,650] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,861] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,863] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:04,936] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:05,117] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:05,151] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:05,152] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:05,153] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:05,373] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
+[2021-08-05 22:12:05,421] [MainThread  ] [DEBUG]  [F] Final result: суть такая
+[2021-08-05 22:12:12,211] [MainThread  ] [INFO ]  [X] Shutting down

@@ -56,45 +56,48 @@ parser.add_argument(
 args = parser.parse_args(remaining)
 
 
-async def handle_client(reader, writer):
-    peername = writer.get_extra_info('peername')
-    log.info('[+] Start handle for ip: %s, port: %s' % peername)
-    data = None
-    while data != b'quit':
-         data = await reader.read(CHUNK)
-         if rec.AcceptWaveform(data):
-             output = rec.Result()
-             json_output = json.loads(output)
-             final_result = json_output["text"]
-             if final_result:
-                 log.debug('[F] Final result: %s' % final_result)
-         else:
-             output = rec.PartialResult()
-             json_output = json.loads(output)
-             partial_result = json_output["partial"]
-             if partial_result:
-                 log.debug('[P] Partial result: %s' % partial_result)
-         if args.broadcast:
-             stream.write(data)
-         #response = str(eval(request)) + '\n'
-         #writer.write(response.encode('utf8'))
-         #await writer.drain()
-    writer.close()
-    log.info('[-] Stop handle for ip: %s, port: %s' % peername)
-
-
-async def connect(config):
-    log.debug('[*] Server ready to connect clients')
-    server = await asyncio.start_server(handle_client, config['address'], config['port'])
-    async with server:
-        await server.serve_forever()
-
-
 class OmegaServer:
+    config = None
+
+
     def __init__(self):
         pass
 
-    def server_service(self, congif = None):
+    async def handle_client(self, reader, writer):
+        peername = writer.get_extra_info('peername')
+        log.info('[+] Start handle for ip: %s, port: %s' % peername)
+        data = None
+        while data != b'quit':
+             data = await reader.read(self.config['chunk'])
+             if self.rec.AcceptWaveform(data):
+                 output = self.rec.Result()
+                 json_output = json.loads(output)
+                 final_result = json_output["text"]
+                 if final_result:
+                     log.debug('[F] Final result: %s' % final_result)
+             else:
+                 output = self.rec.PartialResult()
+                 json_output = json.loads(output)
+                 partial_result = json_output["partial"]
+                 if partial_result:
+                     log.debug('[P] Partial result: %s' % partial_result)
+             if args.broadcast:
+                 stream.write(data)
+             #response = str(eval(request)) + '\n'
+             #writer.write(response.encode('utf8'))
+             #await writer.drain()
+        writer.close()
+        log.info('[-] Stop handle for ip: %s, port: %s' % peername)
+
+
+    async def connect(self):
+        log.debug('[*] Server ready to connect clients')
+        server = await asyncio.start_server(self.handle_client, self.config['address'], self.config['port'])
+        async with server:
+            await server.serve_forever()
+
+
+    def server_service(self, config = None):
         if config is None:
             config = {
                 'client_device': 0,
@@ -104,16 +107,18 @@ class OmegaServer:
                 'rate': args.samplerate,
                 'chunk': 4096,
             }
+        self.config = config
+
         if args.broadcast:
             audio = pyaudio.PyAudio()
-            stream = audio.open(format=FORMAT, channels=config['client_channels'], rate=config['rate'], 
-                                output=True, frames_per_buffer=config['chunk'])
+            stream = audio.open(format=FORMAT, channels=self.config['client_channels'], rate=self.config['rate'], 
+                                output=True, frames_per_buffer=self.config['chunk'])
 
         model = vosk.Model(MODEL)
-        rec = vosk.KaldiRecognizer(model, config['rate'])
+        self.rec = vosk.KaldiRecognizer(model, self.config['rate'])
 
         try:
-            asyncio.run(connect(config))
+            asyncio.run(self.connect())
         except KeyboardInterrupt:
             pass
 
@@ -124,5 +129,5 @@ class OmegaServer:
 
 
 if __name__ == '__main__':
-    service = OmegaServer()
+    service = OmegaServer(None)
     service.server_service()
