@@ -7,12 +7,6 @@ import logging
 import sounddevice as sd
 
 
-DEVICE = 0
-CHANNELS = 1
-RATE = 16000
-CHUNK = 4096
-PORT = 4444
-ADDRESS = "localhost"
 LOGLEVEL = logging.DEBUG
 LOGFILE = 'station_client.log'
 
@@ -49,61 +43,71 @@ parser = argparse.ArgumentParser(
     formatter_class=argparse.RawDescriptionHelpFormatter,
     parents=[parser])
 parser.add_argument(
-    '-i', '--ipaddress', type=str,
-    help='ip server micro')
+    '-a', '--address', type=str, default="localhost",
+    help='ip server')
 parser.add_argument(
-    '-p', '--port', type=str,
-    help='port server micro')
+    '-p', '--port', type=str, default=4444,
+    help='port server')
 parser.add_argument(
-    '-d', '--device', type=int_or_str,
+    '-d', '--device', type=int_or_str, default=0,
     help='input device (numeric ID or substring)')
 parser.add_argument(
-    '-c', '--channels',
+    '-c', '--channels', default=1,
     help='count channels device')
 parser.add_argument(
-    '-r', '--samplerate', type=int, help='sampling rate')
+    '-r', '--samplerate', type=int, default=16000,
+    help='sampling rate')
 args = parser.parse_args(remaining)
 
 
-if args.device:
-    DEVICE = args.device
-if args.channels:
-    CHANNELS = args.channels
-if args.ipaddress:
-    ADDRESS = args.ipaddress
-if args.port:
-    PORT = int(args.port)
-if args.samplerate:
-    RATE = args.samplerate
-
-
-def callback(in_data, frames, time, status):
-    """This is called (from a separate thread) for each audio block."""
-    clientsocket.send(in_data)
-
-
-log.info('[+] Start client OMEGA station')
-log.info('[INFO] Device information | Device: %s | Channels: %s | Rate: %s' % (DEVICE, CHANNELS, RATE))
-log.info('[INFO] Connection information | Address: %s | Port: %s' % (ADDRESS, PORT))
-
-clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-clientsocket.connect((ADDRESS, PORT))
-
-rawInputStream = sd.RawInputStream(samplerate=RATE, blocksize=CHUNK, device=DEVICE, dtype='int16', channels=CHANNELS, callback=callback)
-rawInputStream.start()
-
-log.debug('[INFO] Press Ctrl+C to stop send microphone stream')
-try:
-    while True:
+class OmegaClient:
+    def __init__(self):
         pass
-except KeyboardInterrupt:
-    pass
-log.info("[X] Stop client OMEGA station")
 
-rawInputStream.stop()
-time.sleep(3)
-log.debug('[X] Send quit message')
-clientsocket.send(b'quit')
-time.sleep(3)
-log.debug('[X] Close socket')
-clientsocket.close()
+    def callback(self, in_data, frames, time, status):
+        """This is called (from a separate thread) for each audio block."""
+        self.clientsocket.send(in_data)
+
+
+    def client_service(self, config = None):
+        if config is None:
+            config = {
+                'client_device': args.device,
+                'client_channels': args.channels,
+                'address': args.address,
+                'port': args.port,
+                'rate': args.samplerate,
+                'chunk': 4096,
+            }
+
+        log.info('[+] Start client OMEGA station')
+        log.info('[INFO] Device information | Device: %s | Channels: %s | Rate: %s' % (config['client_device'], config['client_channels'], config['rate']))
+        log.info('[INFO] Connection information | Address: %s | Port: %s' % (config['address'], config['port']))
+
+        self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.clientsocket.connect((config['address'], config['port']))
+
+        rawInputStream = sd.RawInputStream(samplerate=config['rate'], blocksize=config['chunk'], device=config['client_device'],
+                                       dtype='int16', channels=config['client_channels'], callback=self.callback)
+        rawInputStream.start()
+
+        log.debug('[INFO] Press Ctrl+C to stop send microphone stream')
+        try:
+            while True:
+                pass
+        except KeyboardInterrupt:
+            pass
+        log.info("[X] Stop client OMEGA station")
+
+        rawInputStream.stop()
+        time.sleep(3)
+        log.debug('[X] Send quit message')
+        self.clientsocket.send(b'quit')
+        time.sleep(3)
+        log.debug('[X] Close socket')
+        self.clientsocket.close()
+
+
+if __name__ == '__main__':
+    service = OmegaClient()
+    service.client_service()

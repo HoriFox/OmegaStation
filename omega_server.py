@@ -12,11 +12,6 @@ import vosk
 
 
 FORMAT = pyaudio.paInt16
-CHANNELS = 1
-ADDRESS = ''
-PORT = 4444
-RATE = 16000
-CHUNK = 4096
 MODEL = 'model'
 LOGLEVEL = logging.DEBUG
 LOGFILE = 'station_server.log'
@@ -48,33 +43,18 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     '-b', '--broadcast', action='store_true', help='broadcast voice')
 parser.add_argument(
-    '-i', '--ipaddress', type=str, help='ipaddress')
+    '-i', '--ipaddress', type=str, default='',
+    help='ipaddress')
 parser.add_argument(
-    '-p', '--port', type=str, help='port')
+    '-p', '--port', type=str, default=4444,
+    help='port')
 parser.add_argument(
     '-m', '--model', type=str, help='Path to the model')
 parser.add_argument(
-    '-r', '--samplerate', type=int, help='Sampling rate')
+    '-r', '--samplerate', type=int, default=16000,
+    help='Sampling rate')
 args = parser.parse_args(remaining)
 
-if args.model:
-    MODEL = args.model
-if not os.path.exists(MODEL):
-    log.warning("Model folder not found!")
-    parser.exit(0)
-if args.ipaddress:
-    ADDRESS = args.ipaddress
-if args.port:
-    PORT = int(args.port)
-if args.samplerate:
-    RATE = args.samplerate
-
-if args.broadcast:
-    audio = pyaudio.PyAudio()
-    stream = audio.open(format=FORMAT, channels=CHANNELS, rate=RATE, output=True, frames_per_buffer=CHUNK)
-
-model = vosk.Model(MODEL)
-rec = vosk.KaldiRecognizer(model, RATE)
 
 async def handle_client(reader, writer):
     peername = writer.get_extra_info('peername')
@@ -102,18 +82,47 @@ async def handle_client(reader, writer):
     writer.close()
     log.info('[-] Stop handle for ip: %s, port: %s' % peername)
 
-async def connect():
+
+async def connect(config):
     log.debug('[*] Server ready to connect clients')
-    server = await asyncio.start_server(handle_client, ADDRESS, PORT)
+    server = await asyncio.start_server(handle_client, config['address'], config['port'])
     async with server:
         await server.serve_forever()
 
-try:
-    asyncio.run(connect())
-except KeyboardInterrupt:
-    pass
 
-log.info('[X] Shutting down')
-if args.broadcast:
-    stream.close()
-    audio.terminate()
+class OmegaServer:
+    def __init__(self):
+        pass
+
+    def server_service(self, congif = None):
+        if config is None:
+            config = {
+                'client_device': 0,
+                'client_channels': 1,
+                'address': args.address,
+                'port': args.port,
+                'rate': args.samplerate,
+                'chunk': 4096,
+            }
+        if args.broadcast:
+            audio = pyaudio.PyAudio()
+            stream = audio.open(format=FORMAT, channels=config['client_channels'], rate=config['rate'], 
+                                output=True, frames_per_buffer=config['chunk'])
+
+        model = vosk.Model(MODEL)
+        rec = vosk.KaldiRecognizer(model, config['rate'])
+
+        try:
+            asyncio.run(connect(config))
+        except KeyboardInterrupt:
+            pass
+
+        log.info('[X] Shutting down')
+        if args.broadcast:
+            stream.close()
+            audio.terminate()
+
+
+if __name__ == '__main__':
+    service = OmegaServer()
+    service.server_service()
