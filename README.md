@@ -14,10 +14,9 @@
 * Device: 0 (номер звуковой карты в sounddevice)
 
 **Минимум запуска**  
-* Сервер (raspberry pi 4):  
-`python3 omega_server.py`  
-* Клиент (raspberry zero w):  
-`python3 omega_client.py -i [ip хоста с запущенным сервером]`
+1. Модифицировать конфигурационный файл
+2. Запустить на сервере (raspberry pi 4) и клиент (raspberry zero w):  
+`python3 station_service.py`  
 
 **Зависимости**  
 * Сервер:  
