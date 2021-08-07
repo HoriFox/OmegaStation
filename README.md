@@ -70,12 +70,16 @@ sudo apt-get install libasound-dev
 **Зависимости - подсветка**  
 * Клиент:  
 
-Редактируем файл для того чтобы правильно выводить ШИМ сигнал на 18 порт,  
-Отключаем встроенную звуковую карту на порту:  
-`sudo nano /boot/config.txt`  
-В файле комментируем данную строчку:  
-`#dtparam=audio=on`  
-Перезапустим для надёжности:  
+[Статья](https://medium.com/@gerybbg/lights-and-sounds-with-the-raspberry-pi-zero-d048f0c6983b)
+
+Т.к. все ШИМ порты заняты WM8960_Audio_HAT используем SPI:  
+`sudo raspi-config`  
+Interfacing Options >> SPI >> Yes
+`sudo reboot`  
+
+Также необходимо изменить максимальную передачу байтов и частоту шины SPI:  
+В `/boot/cmdline.txt` добавить `spidev.bufsiz=32768` в конец  
+В `/boot/config.txt` добавить `core_freq=250` в конец  
 `sudo reboot`  
 
 Произведём компил rpi_ws281x и поставим пакет:  
