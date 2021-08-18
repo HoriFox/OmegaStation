@@ -5,7 +5,9 @@ import socket
 import argparse
 import logging
 import sounddevice as sd
-
+import numpy as np
+from rpi_ws281x import *
+from led_tools import LEDAnimation
 
 LOGLEVEL = logging.DEBUG
 LOGFILE = 'station_client.log'
@@ -66,6 +68,8 @@ class OmegaClient:
 
     def callback(self, in_data, frames, time, status):
         """This is called (from a separate thread) for each audio block."""
+        volume = min(int(np.linalg.norm(in_data) * 0.0002), 100)
+        self.led_service.sound_volume = volume
         self.clientsocket.send(in_data)
 
 
@@ -87,14 +91,24 @@ class OmegaClient:
         self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.clientsocket.connect((config['address'], config['port']))
 
-        rawInputStream = sd.RawInputStream(samplerate=config['rate'], blocksize=config['chunk'], device=config['client_device'],
+        self.led_service = LEDAnimation(Color(0, 0, 255))
+        self.led_service.run()
+
+        rawInputStream = sd.InputStream(samplerate=config['rate'], blocksize=config['chunk'], device=config['client_device'],
                                        dtype='int16', channels=config['client_channels'], callback=self.callback)
         rawInputStream.start()
 
         log.debug('[INFO] Press Ctrl+C to stop send microphone stream')
         try:
+            #led_service = LEDAnimation(Color(0, 0, 255))
+            #led_service.run()
             while True:
-                pass
+                self.led_service.state = 'loading'
+                time.sleep(2)
+                self.led_service.signal_queue.append('heil')
+                time.sleep(2)
+                self.led_service.state = 'visualization'
+                time.sleep(10)
         except KeyboardInterrupt:
             pass
         log.info("[X] Stop client OMEGA station")
