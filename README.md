@@ -95,6 +95,12 @@ sudo pip3 install adafruit-circuitpython-neopixel
 `sudo python3 strandtest.py`
 
 
+**Тест звука**  
+Ставим плеер:  
+`sudo apt-get install mpg123`  
+Запускаем тестовую музыку:  
+` mpg123 test/Lonely\ God\ -\ Sunday.mp3`  
+
 **Заметка**
 
 Подключиться к wifi на raspberry zero w cli версии:
