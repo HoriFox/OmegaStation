@@ -151,3 +151,2134 @@ NameError: name 'rec' is not defined
 [2021-08-05 22:12:05,373] [MainThread  ] [DEBUG]  [P] Partial result: суть такая
 [2021-08-05 22:12:05,421] [MainThread  ] [DEBUG]  [F] Final result: суть такая
 [2021-08-05 22:12:12,211] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 14:47:43,982] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 14:47:43,984] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 14:47:51,405] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45170
+[2021-08-11 14:47:55,252] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-11 14:47:55,254] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-11 14:47:55,282] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-11 14:47:55,284] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-11 14:47:55,286] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-11 14:47:55,288] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-11 14:47:56,131] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 14:47:56,132] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 14:47:56,135] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 14:47:56,269] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,272] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,396] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,428] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,430] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,562] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,564] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,604] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,606] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,819] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,821] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,851] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:56,854] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:57,074] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-11 14:47:57,130] [MainThread  ] [DEBUG]  [F] Final result: то есть такая запись
+[2021-08-11 14:48:15,442] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 45170
+[2021-08-11 14:54:47,259] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45184
+[2021-08-11 14:57:47,992] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 14:57:48,002] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 72, in handle_client
+    if self.rec.AcceptWaveform(data):
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 67, in AcceptWaveform
+    return _c.vosk_recognizer_accept_waveform(self._handle, data, len(data))
+KeyboardInterrupt
+[2021-08-11 14:57:52,176] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 14:57:52,178] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 14:58:05,354] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45192
+[2021-08-11 14:58:10,342] [MainThread  ] [DEBUG]  [P] Partial result: так так так так
+[2021-08-11 14:58:10,397] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,400] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,514] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,517] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,592] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,595] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,770] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,773] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,809] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:10,812] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:11,026] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:11,060] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:11,063] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:11,065] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:11,283] [MainThread  ] [DEBUG]  [P] Partial result: так-то и так-то
+[2021-08-11 14:58:11,340] [MainThread  ] [DEBUG]  [F] Final result: так-то и так-то
+[2021-08-11 14:58:28,879] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 45192
+[2021-08-11 15:16:33,733] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:21:26,052] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:21:26,054] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:21:26,635] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45194
+[2021-08-11 15:21:30,795] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:30,834] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:30,885] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:30,887] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,003] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,008] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,058] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,060] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,346] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,384] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,517] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,580] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,582] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,851] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:21:31,895] [MainThread  ] [DEBUG]  [F] Final result: сестра запись
+[2021-08-11 15:21:34,287] [MainThread  ] [DEBUG]  [P] Partial result: если
+[2021-08-11 15:21:34,289] [MainThread  ] [DEBUG]  [P] Partial result: если
+[2021-08-11 15:21:34,331] [MainThread  ] [DEBUG]  [P] Partial result: если
+[2021-08-11 15:21:34,333] [MainThread  ] [DEBUG]  [P] Partial result: если
+[2021-08-11 15:21:34,336] [MainThread  ] [DEBUG]  [P] Partial result: если
+[2021-08-11 15:21:34,338] [MainThread  ] [DEBUG]  [P] Partial result: если
+[2021-08-11 15:21:34,508] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,510] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,587] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,589] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,591] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,695] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,697] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,845] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,850] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,852] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться
+[2021-08-11 15:21:34,964] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:34,966] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,102] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,104] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,106] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,142] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,144] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,359] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,360] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,391] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,394] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,611] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,614] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,680] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,686] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,868] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,870] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,902] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:35,904] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:36,123] [MainThread  ] [DEBUG]  [P] Partial result: и оставаться без
+[2021-08-11 15:21:36,169] [MainThread  ] [DEBUG]  [F] Final result: и оставаться без
+[2021-08-11 15:21:39,301] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:39,305] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:39,451] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:39,453] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:39,764] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:39,767] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:40,192] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:40,195] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:21:40,325] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,327] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,432] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,435] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,527] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,529] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,531] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,783] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,785] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:40,787] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:41,031] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:41,034] [MainThread  ] [DEBUG]  [P] Partial result: добавила запись
+[2021-08-11 15:21:41,090] [MainThread  ] [DEBUG]  [F] Final result: добавила запись
+[2021-08-11 15:21:42,923] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:42,924] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:43,047] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:43,048] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:43,120] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:43,123] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:43,295] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:43,297] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:21:43,384] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-11 15:21:43,386] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-11 15:21:43,549] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-11 15:21:43,552] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-11 15:21:43,686] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:21:43,689] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:21:43,803] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:21:43,848] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:21:43,851] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:21:43,852] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:21:44,058] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:21:44,104] [MainThread  ] [DEBUG]  [F] Final result: омега включи свет
+[2021-08-11 15:22:20,613] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 45194
+[2021-08-11 15:23:26,638] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45196
+[2021-08-11 15:23:36,777] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 15:23:36,899] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 15:23:36,901] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 15:23:36,903] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 15:23:36,905] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-11 15:23:36,980] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:36,982] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,158] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,160] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,163] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,165] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,282] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,413] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,416] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,419] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за
+[2021-08-11 15:23:37,531] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,670] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,672] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,675] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,745] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,747] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,925] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,930] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,966] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:37,968] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,181] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,185] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,234] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,236] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,436] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,439] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,499] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,502] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,695] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,696] [MainThread  ] [DEBUG]  [P] Partial result: тестовая за без
+[2021-08-11 15:23:38,739] [MainThread  ] [DEBUG]  [F] Final result: тестовая за без
+[2021-08-11 15:23:40,536] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:23:40,539] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:23:40,673] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:23:40,741] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:23:40,744] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:23:40,747] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:23:40,800] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:40,998] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,000] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,003] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,005] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,112] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,116] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,255] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,260] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,264] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,319] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,322] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,510] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,514] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,517] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,584] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,765] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,768] [MainThread  ] [DEBUG]  [P] Partial result: омега включить свет
+[2021-08-11 15:23:41,822] [MainThread  ] [DEBUG]  [F] Final result: омега включить свет
+[2021-08-11 15:23:54,545] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:23:54,554] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 79, in handle_client
+    output = self.rec.PartialResult()
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 73, in PartialResult
+    return _ffi.string(_c.vosk_recognizer_partial_result(self._handle)).decode('utf-8')
+KeyboardInterrupt
+[2021-08-11 15:31:14,429] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:31:14,430] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:31:40,348] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45198
+[2021-08-11 15:31:58,634] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:31:58,643] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 80, in handle_client
+    json_output = json.loads(output)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+KeyboardInterrupt
+[2021-08-11 15:32:02,740] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:32:02,742] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:32:23,533] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45200
+[2021-08-11 15:32:36,853] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:32:36,863] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 80, in handle_client
+    json_output = json.loads(output)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+KeyboardInterrupt
+[2021-08-11 15:32:40,774] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:32:40,776] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:32:57,164] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45202
+[2021-08-11 15:33:02,953] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:33:02,954] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:33:02,957] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:33:03,104] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:33:03,151] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:33:03,153] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:33:03,155] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:33:03,405] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-11 15:33:05,809] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:33:05,812] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-11 15:33:05,972] [MainThread  ] [DEBUG]  [P] Partial result: омега включить
+[2021-08-11 15:33:05,974] [MainThread  ] [DEBUG]  [P] Partial result: омега включить
+[2021-08-11 15:33:06,061] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,063] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,182] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,183] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,241] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,243] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,433] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,435] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,481] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,483] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,689] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-11 15:33:06,726] [MainThread  ] [DEBUG]  [F] Final result: омега включи свет
+[2021-08-11 15:33:09,410] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,412] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,505] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,507] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,508] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,615] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,617] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,763] [MainThread  ] [DEBUG]  [P] Partial result: петя
+[2021-08-11 15:33:09,850] [MainThread  ] [DEBUG]  [P] Partial result: петя шоу
+[2021-08-11 15:33:09,852] [MainThread  ] [DEBUG]  [P] Partial result: петя шоу
+[2021-08-11 15:33:10,024] [MainThread  ] [DEBUG]  [P] Partial result: петя шоу
+[2021-08-11 15:33:10,026] [MainThread  ] [DEBUG]  [P] Partial result: петя шоу
+[2021-08-11 15:33:10,183] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,185] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,272] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,273] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,310] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,313] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,540] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,582] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,584] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,585] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,784] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,816] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,818] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:10,820] [MainThread  ] [DEBUG]  [P] Partial result: петя шёл по
+[2021-08-11 15:33:11,121] [MainThread  ] [DEBUG]  [F] Final result: петя шоу по
+[2021-08-11 15:34:27,792] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:34:27,802] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 72, in handle_client
+    if self.rec.AcceptWaveform(data):
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 67, in AcceptWaveform
+    return _c.vosk_recognizer_accept_waveform(self._handle, data, len(data))
+KeyboardInterrupt
+[2021-08-11 15:35:10,868] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:35:10,869] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:35:18,637] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45206
+[2021-08-11 15:35:22,687] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:22,690] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:22,767] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:22,770] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:22,773] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:22,828] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,027] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,033] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,111] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,112] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,279] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,282] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,284] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:35:23,324] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-11 15:35:33,292] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:35:33,301] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 79, in handle_client
+    output = self.rec.PartialResult()
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 73, in PartialResult
+    return _ffi.string(_c.vosk_recognizer_partial_result(self._handle)).decode('utf-8')
+KeyboardInterrupt
+[2021-08-11 15:37:21,159] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:37:21,160] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:37:30,247] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45208
+[2021-08-11 15:37:47,510] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,516] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,519] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,689] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,729] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,732] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,733] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,980] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,983] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:47,984] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:48,231] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:48,234] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:48,235] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-11 15:37:48,541] [MainThread  ] [DEBUG]  [F] Final result: а
+[2021-08-11 15:37:48,905] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:37:48,969] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:37:48,972] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:37:48,973] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:37:48,976] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-11 15:37:49,227] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запуск
+[2021-08-11 15:37:49,230] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запуск
+[2021-08-11 15:37:49,233] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запуск
+[2021-08-11 15:37:49,349] [MainThread  ] [DEBUG]  [P] Partial result: тестовый
+[2021-08-11 15:37:49,350] [MainThread  ] [DEBUG]  [P] Partial result: тестовый
+[2021-08-11 15:37:49,481] [MainThread  ] [DEBUG]  [P] Partial result: тестовый
+[2021-08-11 15:37:49,484] [MainThread  ] [DEBUG]  [P] Partial result: тестовый
+[2021-08-11 15:37:49,485] [MainThread  ] [DEBUG]  [P] Partial result: тестовый
+[2021-08-11 15:37:49,487] [MainThread  ] [DEBUG]  [P] Partial result: тестовый
+[2021-08-11 15:37:49,628] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,737] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,739] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,744] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,798] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,800] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,994] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,996] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:49,998] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,059] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,061] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,249] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,251] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,253] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,284] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,286] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,505] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,507] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запись
+[2021-08-11 15:37:50,549] [MainThread  ] [DEBUG]  [F] Final result: тестовый запись
+[2021-08-11 15:37:55,730] [MainThread  ] [DEBUG]  [F] Final result: окей
+[2021-08-11 15:38:03,729] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:38:34,136] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:38:34,138] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:38:42,141] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45212
+[2021-08-11 15:39:21,992] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:39:22,000] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 72, in handle_client
+    if self.rec.AcceptWaveform(data):
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 67, in AcceptWaveform
+    return _c.vosk_recognizer_accept_waveform(self._handle, data, len(data))
+KeyboardInterrupt
+[2021-08-11 15:39:25,960] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:39:25,961] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:39:32,033] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45214
+[2021-08-11 15:40:09,454] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-11 15:40:09,463] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 72, in handle_client
+    if self.rec.AcceptWaveform(data):
+  File "/usr/local/lib/python3.7/dist-packages/vosk/__init__.py", line 67, in AcceptWaveform
+    return _c.vosk_recognizer_accept_waveform(self._handle, data, len(data))
+KeyboardInterrupt
+[2021-08-11 15:40:46,613] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-11 15:40:46,615] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-11 15:40:49,247] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45218
+[2021-08-11 15:40:56,552] [MainThread  ] [DEBUG]  [P] Partial result: ты оставляют
+[2021-08-11 15:40:56,555] [MainThread  ] [DEBUG]  [P] Partial result: ты оставляют
+[2021-08-11 15:40:56,842] [MainThread  ] [DEBUG]  [P] Partial result: доставая пистолет
+[2021-08-11 15:40:56,845] [MainThread  ] [DEBUG]  [P] Partial result: доставая пистолет
+[2021-08-11 15:40:57,067] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-11 15:40:57,070] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись
+[2021-08-11 15:40:57,201] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись не оставляя за собой
+[2021-08-11 15:40:57,203] [MainThread  ] [DEBUG]  [P] Partial result: тестовая запись не оставляя за собой
+[2021-08-11 15:40:57,292] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,294] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,438] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,474] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,477] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,713] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,715] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,729] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,742] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:57,744] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-11 15:40:58,004] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость
+[2021-08-11 15:40:58,007] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость
+[2021-08-11 15:40:58,247] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость
+[2021-08-11 15:40:58,250] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость
+[2021-08-11 15:40:58,301] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона
+[2021-08-11 15:40:58,303] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона
+[2021-08-11 15:40:58,497] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона
+[2021-08-11 15:40:58,499] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона
+[2021-08-11 15:40:58,626] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона
+[2021-08-11 15:40:58,628] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона
+[2021-08-11 15:40:58,753] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона
+[2021-08-11 15:40:58,829] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:58,832] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:58,833] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,009] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,063] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,065] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,066] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,295] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,297] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,299] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,573] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,578] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,581] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,849] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,852] [MainThread  ] [DEBUG]  [P] Partial result: запись громкость микрофона проверка
+[2021-08-11 15:40:59,897] [MainThread  ] [DEBUG]  [F] Final result: тестовая запись доставляя запись громкость микрофона проверка
+[2021-08-11 15:41:07,622] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,713] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,715] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,723] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,725] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,727] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,818] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,969] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,974] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:07,976] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:08,062] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:08,065] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:08,229] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:08,232] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:08,235] [MainThread  ] [DEBUG]  [P] Partial result: проверка
+[2021-08-11 15:41:08,287] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,289] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,482] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,484] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,487] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,549] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,551] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,737] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,740] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,743] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости
+[2021-08-11 15:41:08,819] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:08,823] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:08,993] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:08,995] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:08,997] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:09,091] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:09,093] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:09,249] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:09,251] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:09,260] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофон
+[2021-08-11 15:41:09,336] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,338] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,505] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,509] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,689] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,693] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,765] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,769] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,815] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:09,818] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,017] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,019] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,074] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,076] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,273] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,327] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,330] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,331] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,531] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,595] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,600] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,603] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,851] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,856] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:10,859] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха
+[2021-08-11 15:41:11,073] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,076] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,077] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,376] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,378] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,422] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,553] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,555] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,560] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,561] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,597] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,812] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,823] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,827] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а
+[2021-08-11 15:41:11,912] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:11,915] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,065] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,067] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,073] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,107] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,322] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,324] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,326] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,363] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,578] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,580] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,583] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а
+[2021-08-11 15:41:12,652] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:12,656] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:12,836] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:12,845] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:12,848] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:12,893] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:12,895] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,089] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,091] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,131] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,133] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,345] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,354] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,402] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,404] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,603] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,672] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,677] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,857] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,860] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,894] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:13,897] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:14,113] [MainThread  ] [DEBUG]  [P] Partial result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:14,164] [MainThread  ] [DEBUG]  [F] Final result: проверка громкости микрофона бляха-муха а а а
+[2021-08-11 15:41:22,240] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 45218
+[2021-08-11 15:42:14,103] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 45220
+[2021-08-11 15:42:45,283] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 45220
+[2021-08-11 17:41:59,128] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-14 01:58:25,506] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-14 01:58:25,510] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-14 01:58:35,021] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48304
+[2021-08-14 02:01:54,703] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-14 02:01:54,712] [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<OmegaServer.handle_client() done, defined at /home/pi/Desktop/OmegaStation/omega_server.py:66> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 121, in server_service
+    asyncio.run(self.connect())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1775, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pi/Desktop/OmegaStation/omega_server.py", line 71, in handle_client
+    data = await reader.read(self.config['chunk'])
+  File "/usr/lib/python3.7/asyncio/streams.py", line 643, in read
+    data = bytes(self._buffer[:n])
+KeyboardInterrupt
+[2021-08-14 02:01:59,285] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-14 02:01:59,286] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-14 02:02:48,675] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48312
+[2021-08-14 02:02:54,311] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48312
+[2021-08-14 02:03:38,157] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48314
+[2021-08-14 02:03:49,423] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48314
+[2021-08-14 02:04:27,189] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48316
+[2021-08-14 02:04:37,686] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48316
+[2021-08-14 02:05:15,274] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48318
+[2021-08-14 02:05:21,924] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:21,926] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,037] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,070] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,072] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,254] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,287] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,288] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,289] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,510] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,511] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,573] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,575] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,766] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:05:22,883] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись того
+[2021-08-14 02:05:22,884] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись того
+[2021-08-14 02:05:22,887] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись того
+[2021-08-14 02:05:23,023] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись того
+[2021-08-14 02:05:23,317] [MainThread  ] [DEBUG]  [F] Final result: то есть такая запись
+[2021-08-14 02:05:28,220] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,222] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,397] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,401] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,402] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,436] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,654] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,657] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,659] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,748] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,910] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,992] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,994] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:28,997] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:29,166] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:29,168] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:05:29,241] [MainThread  ] [DEBUG]  [F] Final result: то есть запись
+[2021-08-14 02:05:30,022] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,023] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,025] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,192] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,195] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,387] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,390] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,545] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,547] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,548] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,703] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,749] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,750] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:30,753] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:05:31,120] [MainThread  ] [DEBUG]  [F] Final result: то есть
+[2021-08-14 02:05:35,981] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:35,982] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,076] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,080] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,081] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,200] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,335] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,339] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,341] [MainThread  ] [DEBUG]  [P] Partial result: то есть твоя
+[2021-08-14 02:05:36,394] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:36,592] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:36,631] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:36,632] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:36,846] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:36,880] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:36,882] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:36,883] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:37,101] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:37,197] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:37,199] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:37,203] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:37,358] [MainThread  ] [DEBUG]  [P] Partial result: то есть запись
+[2021-08-14 02:05:37,427] [MainThread  ] [DEBUG]  [F] Final result: то есть твоя запись
+[2021-08-14 02:05:37,942] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:05:37,944] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:05:37,946] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:05:38,129] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:05:38,234] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то
+[2021-08-14 02:05:38,234] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то
+[2021-08-14 02:05:38,236] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то
+[2021-08-14 02:05:38,382] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то
+[2021-08-14 02:05:38,490] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то
+[2021-08-14 02:05:38,491] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то
+[2021-08-14 02:05:38,493] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то
+[2021-08-14 02:05:38,763] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь
+[2021-08-14 02:05:38,767] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь
+[2021-08-14 02:05:38,769] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь
+[2021-08-14 02:05:38,983] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь
+[2021-08-14 02:05:38,986] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь
+[2021-08-14 02:05:38,989] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь
+[2021-08-14 02:05:39,290] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я
+[2021-08-14 02:05:39,292] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я
+[2021-08-14 02:05:39,358] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что
+[2021-08-14 02:05:39,407] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что
+[2021-08-14 02:05:39,411] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что
+[2021-08-14 02:05:39,413] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что
+[2021-08-14 02:05:39,478] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,661] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,665] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,666] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,746] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,921] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,926] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,960] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:39,963] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:40,173] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:40,178] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:40,179] [MainThread  ] [DEBUG]  [P] Partial result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:40,241] [MainThread  ] [DEBUG]  [F] Final result: ты что-то говоришь я что-то говорю
+[2021-08-14 02:05:51,732] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:51,964] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,032] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,035] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,038] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,207] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,281] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,285] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,464] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,499] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,500] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,502] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,720] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-14 02:05:52,800] [MainThread  ] [DEBUG]  [F] Final result: а
+[2021-08-14 02:05:54,570] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:54,573] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:54,611] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:54,774] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:54,778] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:54,831] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:55,022] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:55,025] [MainThread  ] [DEBUG]  [P] Partial result: да
+[2021-08-14 02:05:55,254] [MainThread  ] [DEBUG]  [F] Final result: да
+[2021-08-14 02:05:55,845] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:55,847] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:55,848] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,045] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,118] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,119] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,121] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,302] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,336] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,338] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,339] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,557] [MainThread  ] [DEBUG]  [P] Partial result: включить свет
+[2021-08-14 02:05:56,640] [MainThread  ] [DEBUG]  [F] Final result: включить свет
+[2021-08-14 02:06:04,115] [MainThread  ] [DEBUG]  [P] Partial result: томека
+[2021-08-14 02:06:04,117] [MainThread  ] [DEBUG]  [P] Partial result: томека
+[2021-08-14 02:06:04,119] [MainThread  ] [DEBUG]  [P] Partial result: томека
+[2021-08-14 02:06:04,237] [MainThread  ] [DEBUG]  [P] Partial result: томека
+[2021-08-14 02:06:04,316] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,317] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,319] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,493] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,532] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,535] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,538] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,750] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,806] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:04,809] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:05,006] [MainThread  ] [DEBUG]  [P] Partial result: томека включи свет
+[2021-08-14 02:06:05,069] [MainThread  ] [DEBUG]  [F] Final result: томека включи свет
+[2021-08-14 02:06:16,208] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48318
+[2021-08-14 02:06:33,347] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-14 02:06:40,997] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-14 02:06:40,998] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-14 02:07:33,390] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48320
+[2021-08-14 02:07:39,986] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:39,988] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:39,990] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:40,349] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:40,351] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:40,435] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:40,437] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:40,518] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:40,619] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:40,623] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:40,668] [MainThread  ] [DEBUG]  [F] Final result: омега включи свет
+[2021-08-14 02:07:41,224] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,225] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,387] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,422] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,423] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,424] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,643] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,693] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,693] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,695] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:41,905] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:42,030] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:42,031] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:42,032] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:42,155] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-14 02:07:42,221] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-14 02:07:42,222] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-14 02:07:42,224] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-14 02:07:42,413] [MainThread  ] [DEBUG]  [P] Partial result: омега включи
+[2021-08-14 02:07:42,486] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,489] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,667] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,718] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,719] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,721] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,929] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,996] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:42,999] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:43,179] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-14 02:07:43,226] [MainThread  ] [DEBUG]  [F] Final result: омега включи свет
+[2021-08-14 02:07:50,284] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48320
+[2021-08-14 02:20:15,801] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48322
+[2021-08-14 02:20:20,925] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48322
+[2021-08-14 02:20:44,747] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48324
+[2021-08-14 02:20:51,643] [MainThread  ] [DEBUG]  [P] Partial result: тестовый запуск
+[2021-08-14 02:20:51,793] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:51,795] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:51,858] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:51,982] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:51,985] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,017] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,018] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,238] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,243] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,244] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,302] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,494] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,498] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,499] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,612] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,750] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:52,799] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая
+[2021-08-14 02:20:52,800] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая
+[2021-08-14 02:20:52,802] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая
+[2021-08-14 02:20:53,006] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая
+[2021-08-14 02:20:53,010] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая
+[2021-08-14 02:20:53,084] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая
+[2021-08-14 02:20:53,263] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая
+[2021-08-14 02:20:53,301] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,304] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,307] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,523] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,590] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,594] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,773] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,780] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,854] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,857] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:53,859] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:54,030] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:54,033] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись
+[2021-08-14 02:20:54,098] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест
+[2021-08-14 02:20:54,101] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест
+[2021-08-14 02:20:54,286] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест
+[2021-08-14 02:20:54,338] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест
+[2021-08-14 02:20:54,341] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест
+[2021-08-14 02:20:54,343] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест
+[2021-08-14 02:20:54,543] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест
+[2021-08-14 02:20:54,706] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:54,708] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:54,710] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:54,856] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:54,859] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:54,861] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:55,088] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:55,091] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:55,093] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовая запись тест тест тест
+[2021-08-14 02:20:55,570] [MainThread  ] [DEBUG]  [F] Final result: тестовая запись тестовая запись тест тест тест
+[2021-08-14 02:20:55,861] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,078] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,081] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,130] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,335] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,341] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,342] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,399] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,591] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,597] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,664] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,846] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,847] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:56,895] [MainThread  ] [DEBUG]  [F] Final result: запись
+[2021-08-14 02:20:57,441] [MainThread  ] [DEBUG]  [P] Partial result: записи
+[2021-08-14 02:20:57,443] [MainThread  ] [DEBUG]  [P] Partial result: записи
+[2021-08-14 02:20:57,445] [MainThread  ] [DEBUG]  [P] Partial result: записи
+[2021-08-14 02:20:57,614] [MainThread  ] [DEBUG]  [P] Partial result: записи
+[2021-08-14 02:20:57,615] [MainThread  ] [DEBUG]  [P] Partial result: записи
+[2021-08-14 02:20:57,727] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:57,730] [MainThread  ] [DEBUG]  [P] Partial result: запись
+[2021-08-14 02:20:57,957] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:57,958] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:57,960] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,129] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,172] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,173] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,175] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,390] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,455] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,457] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,460] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,686] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,688] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,689] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,928] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,930] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:58,932] [MainThread  ] [DEBUG]  [P] Partial result: запись тестовый
+[2021-08-14 02:20:59,196] [MainThread  ] [DEBUG]  [F] Final result: запись тестовый
+[2021-08-14 02:21:02,930] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48324
+[2021-08-14 02:21:43,573] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48326
+[2021-08-14 02:21:49,959] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-14 02:21:49,961] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-14 02:21:50,035] [MainThread  ] [DEBUG]  [P] Partial result: тестовая
+[2021-08-14 02:21:50,076] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,079] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,081] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,372] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,374] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,376] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,610] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,613] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,614] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись
+[2021-08-14 02:21:50,855] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть
+[2021-08-14 02:21:50,858] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть
+[2021-08-14 02:21:50,967] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая
+[2021-08-14 02:21:51,059] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая
+[2021-08-14 02:21:51,062] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая
+[2021-08-14 02:21:51,064] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая
+[2021-08-14 02:21:51,066] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая
+[2021-08-14 02:21:51,190] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,315] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,318] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,319] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,363] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,571] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,575] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,576] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,612] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,827] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,830] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,831] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,887] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:51,890] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,084] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,088] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,158] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,339] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,399] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,401] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,403] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,595] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись
+[2021-08-14 02:21:52,673] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись записи
+[2021-08-14 02:21:52,675] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись записи
+[2021-08-14 02:21:52,677] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись записи
+[2021-08-14 02:21:52,852] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись записи
+[2021-08-14 02:21:52,965] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись
+[2021-08-14 02:21:52,967] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись
+[2021-08-14 02:21:52,970] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись
+[2021-08-14 02:21:53,108] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись
+[2021-08-14 02:21:53,110] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись
+[2021-08-14 02:21:53,160] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,162] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,364] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,366] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,431] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,434] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,620] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,654] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,656] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,658] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,876] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,940] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,942] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:53,945] [MainThread  ] [DEBUG]  [P] Partial result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:54,235] [MainThread  ] [DEBUG]  [F] Final result: то есть такая запись то есть такая запись запись тестовый
+[2021-08-14 02:21:54,739] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-14 02:21:54,742] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-14 02:21:54,828] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:54,903] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:54,906] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:54,907] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,022] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,164] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,171] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,208] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,411] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,412] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,414] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,415] [MainThread  ] [DEBUG]  [P] Partial result: что делать
+[2021-08-14 02:21:55,467] [MainThread  ] [DEBUG]  [F] Final result: что делать
+[2021-08-14 02:21:56,812] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:56,813] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:56,815] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:56,946] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:56,995] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:56,997] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:57,203] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:57,254] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:57,255] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:57,257] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:57,460] [MainThread  ] [DEBUG]  [P] Partial result: как дела
+[2021-08-14 02:21:57,536] [MainThread  ] [DEBUG]  [F] Final result: как дела
+[2021-08-14 02:22:03,028] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48326
+[2021-08-14 02:22:38,729] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 48328
+[2021-08-14 02:22:46,030] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:22:46,033] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:22:46,220] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:22:46,225] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:22:46,228] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:22:46,297] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:22:46,476] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-14 02:22:46,529] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-14 02:22:46,786] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:22:46,788] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:22:46,791] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:22:46,987] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-14 02:22:47,396] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,398] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,400] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,499] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,584] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,586] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,587] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,753] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,790] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,792] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:47,794] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:48,011] [MainThread  ] [DEBUG]  [P] Partial result: сука
+[2021-08-14 02:22:48,070] [MainThread  ] [DEBUG]  [F] Final result: тест сука
+[2021-08-14 02:22:49,395] [MainThread  ] [DEBUG]  [P] Partial result: меня
+[2021-08-14 02:22:49,546] [MainThread  ] [DEBUG]  [P] Partial result: меня
+[2021-08-14 02:22:49,550] [MainThread  ] [DEBUG]  [P] Partial result: меня
+[2021-08-14 02:22:49,551] [MainThread  ] [DEBUG]  [P] Partial result: меня
+[2021-08-14 02:22:49,648] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:49,803] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:49,807] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:49,808] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:49,844] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:50,060] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:50,065] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:50,067] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:50,132] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:50,314] [MainThread  ] [DEBUG]  [P] Partial result: меня слышно
+[2021-08-14 02:22:50,365] [MainThread  ] [DEBUG]  [F] Final result: меня слышно
+[2021-08-14 02:23:03,819] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 48328
+[2021-08-14 02:59:25,351] [MainThread  ] [INFO ]  [X] Shutting down
+[2021-08-18 08:44:52,858] [MainThread  ] [DEBUG]  Using selector: EpollSelector
+[2021-08-18 08:44:52,863] [MainThread  ] [DEBUG]  [*] Server ready to connect clients
+[2021-08-18 08:45:04,748] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 40190
+[2021-08-18 08:45:27,953] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,108] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,110] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,187] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,189] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,193] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,363] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,397] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,398] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,400] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,619] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,660] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,661] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,663] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,875] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,910] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,911] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:28,914] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:29,132] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:45:29,212] [MainThread  ] [DEBUG]  [F] Final result: ну
+[2021-08-18 08:45:32,025] [MainThread  ] [DEBUG]  [P] Partial result: это
+[2021-08-18 08:45:32,029] [MainThread  ] [DEBUG]  [P] Partial result: это
+[2021-08-18 08:45:32,452] [MainThread  ] [DEBUG]  [P] Partial result: это
+[2021-08-18 08:45:32,456] [MainThread  ] [DEBUG]  [P] Partial result: это
+[2021-08-18 08:45:32,683] [MainThread  ] [DEBUG]  [P] Partial result: это
+[2021-08-18 08:45:32,686] [MainThread  ] [DEBUG]  [P] Partial result: это
+[2021-08-18 08:45:32,727] [MainThread  ] [DEBUG]  [P] Partial result: это
+[2021-08-18 08:45:32,810] [MainThread  ] [DEBUG]  [F] Final result: это надолго
+[2021-08-18 08:47:19,658] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 40190
+[2021-08-18 08:48:40,806] [MainThread  ] [INFO ]  [+] Start handle for ip: 192.168.8.197, port: 40192
+[2021-08-18 08:48:54,071] [MainThread  ] [DEBUG]  [P] Partial result: так
+[2021-08-18 08:48:54,075] [MainThread  ] [DEBUG]  [P] Partial result: так
+[2021-08-18 08:48:54,077] [MainThread  ] [DEBUG]  [P] Partial result: так
+[2021-08-18 08:48:54,350] [MainThread  ] [DEBUG]  [P] Partial result: так себе на
+[2021-08-18 08:48:54,616] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:54,619] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:54,751] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:54,753] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:54,875] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:54,966] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:54,971] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:54,972] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,004] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,214] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,217] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,218] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,249] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,466] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,516] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,518] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,519] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,730] [MainThread  ] [DEBUG]  [P] Partial result: так себе на самом деле
+[2021-08-18 08:48:55,814] [MainThread  ] [DEBUG]  [F] Final result: так себе на самом деле
+[2021-08-18 08:48:57,091] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:48:57,093] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:48:57,096] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:48:57,263] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:48:57,383] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:48:57,384] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:48:57,387] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:48:57,644] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:57,646] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:57,648] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:57,804] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:57,806] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:57,808] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,093] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,098] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,168] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,290] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,294] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,296] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,336] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,540] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,546] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:48:58,592] [MainThread  ] [DEBUG]  [F] Final result: я думаю что
+[2021-08-18 08:49:00,234] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,236] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,339] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,340] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,510] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,513] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,599] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,747] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,749] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,751] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:00,852] [MainThread  ] [DEBUG]  [P] Partial result: просто
+[2021-08-18 08:49:01,053] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,056] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,110] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,282] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,284] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,285] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,409] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,411] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,413] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,644] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,646] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,648] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,915] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,918] [MainThread  ] [DEBUG]  [P] Partial result: просто сведёте
+[2021-08-18 08:49:01,976] [MainThread  ] [DEBUG]  [F] Final result: просто сведёте
+[2021-08-18 08:49:03,536] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:49:03,537] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:49:03,539] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:49:03,670] [MainThread  ] [DEBUG]  [P] Partial result: я
+[2021-08-18 08:49:03,785] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:49:03,786] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:49:03,788] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:49:03,912] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:49:03,914] [MainThread  ] [DEBUG]  [P] Partial result: я думаю
+[2021-08-18 08:49:03,976] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:49:03,979] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:49:04,171] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:49:04,173] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что
+[2021-08-18 08:49:04,394] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно
+[2021-08-18 08:49:04,397] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно
+[2021-08-18 08:49:04,400] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно
+[2021-08-18 08:49:04,427] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно
+[2021-08-18 08:49:04,549] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было
+[2021-08-18 08:49:04,551] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было
+[2021-08-18 08:49:04,695] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было
+[2021-08-18 08:49:04,919] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было
+[2021-08-18 08:49:04,923] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было
+[2021-08-18 08:49:04,927] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было
+[2021-08-18 08:49:04,938] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было
+[2021-08-18 08:49:05,065] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то
+[2021-08-18 08:49:05,068] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то
+[2021-08-18 08:49:05,069] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то
+[2021-08-18 08:49:05,354] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,357] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,358] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,482] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,485] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,486] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,754] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,757] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,820] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,970] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,974] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:05,975] [MainThread  ] [DEBUG]  [P] Partial result: я думаю что нужно было как-то их
+[2021-08-18 08:49:06,020] [MainThread  ] [DEBUG]  [F] Final result: я думаю что нужно было как-то их
+[2021-08-18 08:49:08,860] [MainThread  ] [DEBUG]  [P] Partial result: более
+[2021-08-18 08:49:08,864] [MainThread  ] [DEBUG]  [P] Partial result: более
+[2021-08-18 08:49:08,867] [MainThread  ] [DEBUG]  [P] Partial result: более
+[2021-08-18 08:49:09,049] [MainThread  ] [DEBUG]  [P] Partial result: поля
+[2021-08-18 08:49:09,050] [MainThread  ] [DEBUG]  [P] Partial result: поля
+[2021-08-18 08:49:09,116] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,118] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,505] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,508] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,511] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,660] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,663] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,763] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,814] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,818] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,821] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:09,905] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:10,067] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:10,069] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:10,072] [MainThread  ] [DEBUG]  [P] Partial result: поля эффектности
+[2021-08-18 08:49:10,125] [MainThread  ] [DEBUG]  [F] Final result: поля эффектности
+[2021-08-18 08:49:15,266] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-18 08:49:15,268] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-18 08:49:15,270] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-18 08:49:15,430] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-18 08:49:15,449] [MainThread  ] [DEBUG]  [P] Partial result: а
+[2021-08-18 08:49:15,550] [MainThread  ] [DEBUG]  [P] Partial result: алю
+[2021-08-18 08:49:15,552] [MainThread  ] [DEBUG]  [P] Partial result: алю
+[2021-08-18 08:49:15,687] [MainThread  ] [DEBUG]  [P] Partial result: алю
+[2021-08-18 08:49:15,728] [MainThread  ] [DEBUG]  [P] Partial result: алю
+[2021-08-18 08:49:15,730] [MainThread  ] [DEBUG]  [P] Partial result: алю
+[2021-08-18 08:49:15,732] [MainThread  ] [DEBUG]  [P] Partial result: алю
+[2021-08-18 08:49:15,947] [MainThread  ] [DEBUG]  [P] Partial result: алю
+[2021-08-18 08:49:16,064] [MainThread  ] [DEBUG]  [F] Final result: лет
+[2021-08-18 08:49:17,329] [MainThread  ] [DEBUG]  [P] Partial result: а мне
+[2021-08-18 08:49:17,333] [MainThread  ] [DEBUG]  [P] Partial result: а мне
+[2021-08-18 08:49:17,493] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:17,495] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:17,589] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,591] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,703] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,737] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,742] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,775] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,776] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,995] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:17,996] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:18,052] [MainThread  ] [DEBUG]  [F] Final result: омега включи свет
+[2021-08-18 08:49:18,864] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:18,865] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:18,867] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,031] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,142] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,143] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,146] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,282] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,402] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,403] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,405] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,559] [MainThread  ] [DEBUG]  [P] Partial result: омега
+[2021-08-18 08:49:19,619] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:19,620] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:19,622] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:19,782] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:19,868] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:19,869] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:19,871] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:20,043] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:20,078] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:20,079] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:20,081] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:20,300] [MainThread  ] [DEBUG]  [P] Partial result: омега включи свет
+[2021-08-18 08:49:20,390] [MainThread  ] [DEBUG]  [F] Final result: омега включи свет
+[2021-08-18 08:49:21,404] [MainThread  ] [DEBUG]  [P] Partial result: а ведь
+[2021-08-18 08:49:21,593] [MainThread  ] [DEBUG]  [P] Partial result: а ведь
+[2021-08-18 08:49:21,597] [MainThread  ] [DEBUG]  [P] Partial result: а ведь
+[2021-08-18 08:49:21,600] [MainThread  ] [DEBUG]  [P] Partial result: а ведь
+[2021-08-18 08:49:23,389] [MainThread  ] [DEBUG]  [P] Partial result: однако учитывая
+[2021-08-18 08:49:23,390] [MainThread  ] [DEBUG]  [P] Partial result: однако учитывая
+[2021-08-18 08:49:23,393] [MainThread  ] [DEBUG]  [P] Partial result: однако учитывая
+[2021-08-18 08:49:23,550] [MainThread  ] [DEBUG]  [P] Partial result: включи свет
+[2021-08-18 08:49:23,554] [MainThread  ] [DEBUG]  [P] Partial result: включи свет
+[2021-08-18 08:49:23,626] [MainThread  ] [DEBUG]  [P] Partial result: включи свет
+[2021-08-18 08:49:23,666] [MainThread  ] [DEBUG]  [P] Partial result: включи свет
+[2021-08-18 08:49:23,668] [MainThread  ] [DEBUG]  [P] Partial result: включи свет
+[2021-08-18 08:49:23,670] [MainThread  ] [DEBUG]  [P] Partial result: включи свет
+[2021-08-18 08:49:23,880] [MainThread  ] [DEBUG]  [P] Partial result: включи свет
+[2021-08-18 08:49:23,951] [MainThread  ] [DEBUG]  [F] Final result: а века включи свет
+[2021-08-18 08:50:29,785] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:29,788] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:29,791] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:30,077] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:30,081] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:30,084] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:30,267] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:30,270] [MainThread  ] [DEBUG]  [P] Partial result: станет ли
+[2021-08-18 08:50:30,345] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше
+[2021-08-18 08:50:30,440] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше
+[2021-08-18 08:50:30,444] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше
+[2021-08-18 08:50:30,447] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше
+[2021-08-18 08:50:30,564] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:30,699] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:30,703] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:30,704] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:30,780] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:30,952] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:30,955] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:30,957] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:31,034] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:31,206] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:31,225] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:31,228] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если
+[2021-08-18 08:50:31,316] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я
+[2021-08-18 08:50:31,319] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я
+[2021-08-18 08:50:31,466] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я
+[2021-08-18 08:50:31,469] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я
+[2021-08-18 08:50:31,596] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:31,738] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:31,821] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:31,824] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:31,977] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,065] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,068] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,232] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,235] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,318] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,323] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,492] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,653] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,656] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,742] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,748] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю
+[2021-08-18 08:50:32,872] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:32,875] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,002] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,054] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,056] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,254] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,352] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,357] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,361] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,628] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,631] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,634] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие
+[2021-08-18 08:50:33,838] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивается
+[2021-08-18 08:50:33,841] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивается
+[2021-08-18 08:50:33,844] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивается
+[2021-08-18 08:50:34,126] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает
+[2021-08-18 08:50:34,130] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает
+[2021-08-18 08:50:34,203] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает теле
+[2021-08-18 08:50:34,346] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает теле
+[2021-08-18 08:50:34,353] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает теле
+[2021-08-18 08:50:34,405] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает теле
+[2021-08-18 08:50:34,538] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает теле
+[2021-08-18 08:50:34,542] [MainThread  ] [DEBUG]  [P] Partial result: станет лучше если я поставлю маленькие рассеивает теле
+[2021-08-18 08:50:34,640] [MainThread  ] [DEBUG]  [F] Final result: станет лучше если я поставлю маленькие рассеивает теле
+[2021-08-18 08:50:36,509] [MainThread  ] [DEBUG]  [P] Partial result: так
+[2021-08-18 08:50:36,512] [MainThread  ] [DEBUG]  [P] Partial result: так
+[2021-08-18 08:50:36,587] [MainThread  ] [DEBUG]  [P] Partial result: так
+[2021-08-18 08:50:37,196] [MainThread  ] [DEBUG]  [P] Partial result: кружочками
+[2021-08-18 08:50:37,199] [MainThread  ] [DEBUG]  [P] Partial result: кружочками
+[2021-08-18 08:50:37,201] [MainThread  ] [DEBUG]  [P] Partial result: кружочками
+[2021-08-18 08:50:37,442] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,452] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,460] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,640] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,642] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,644] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,933] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,935] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:37,966] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:38,119] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:38,123] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:38,124] [MainThread  ] [DEBUG]  [P] Partial result: кружочком
+[2021-08-18 08:50:38,170] [MainThread  ] [DEBUG]  [F] Final result: кружочком
+[2021-08-18 08:50:43,593] [MainThread  ] [DEBUG]  [P] Partial result: стало
+[2021-08-18 08:50:43,595] [MainThread  ] [DEBUG]  [P] Partial result: стало
+[2021-08-18 08:50:43,597] [MainThread  ] [DEBUG]  [P] Partial result: стало
+[2021-08-18 08:50:43,754] [MainThread  ] [DEBUG]  [P] Partial result: стало
+[2021-08-18 08:50:43,814] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:43,815] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:43,817] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,006] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,009] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,102] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,109] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,281] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,333] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,335] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,518] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,603] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,606] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,608] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,779] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,815] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,816] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:44,818] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,115] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,120] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,123] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,412] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,414] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,417] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,619] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,621] [MainThread  ] [DEBUG]  [P] Partial result: стало намного
+[2021-08-18 08:50:45,676] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:45,801] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:45,805] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:45,807] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:45,929] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,054] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,060] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,065] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,134] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,136] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,316] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,320] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,322] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,356] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,581] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,584] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,585] [MainThread  ] [DEBUG]  [P] Partial result: стало намного своеобразное
+[2021-08-18 08:50:46,676] [MainThread  ] [DEBUG]  [F] Final result: стало намного своеобразное
+[2021-08-18 08:51:03,801] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:51:03,803] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:51:03,805] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:51:03,974] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:51:04,128] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:51:04,132] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:51:04,136] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:51:04,375] [MainThread  ] [DEBUG]  [P] Partial result: но
+[2021-08-18 08:51:04,377] [MainThread  ] [DEBUG]  [P] Partial result: но
+[2021-08-18 08:51:04,379] [MainThread  ] [DEBUG]  [P] Partial result: но
+[2021-08-18 08:51:04,533] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:04,536] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:04,538] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:04,780] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:04,782] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:04,847] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:04,998] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,003] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,005] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,060] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,265] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,271] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,273] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,341] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,510] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,513] [MainThread  ] [DEBUG]  [P] Partial result: но если
+[2021-08-18 08:51:05,562] [MainThread  ] [DEBUG]  [F] Final result: ну если
+[2021-08-18 08:51:07,503] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:07,506] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:07,511] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:07,560] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:07,774] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:07,776] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:07,780] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:07,820] [MainThread  ] [DEBUG]  [P] Partial result: баре
+[2021-08-18 08:51:08,170] [MainThread  ] [DEBUG]  [F] Final result: баре
+[2021-08-18 08:51:08,397] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-18 08:51:08,400] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-18 08:51:08,402] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-18 08:51:08,724] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-18 08:51:08,729] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-18 08:51:08,848] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-18 08:51:08,851] [MainThread  ] [DEBUG]  [P] Partial result: что
+[2021-08-18 08:51:08,889] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,093] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,096] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,098] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,143] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,355] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,360] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,490] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,605] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,609] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,611] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,642] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,644] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,866] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,868] [MainThread  ] [DEBUG]  [P] Partial result: что своеобразный
+[2021-08-18 08:51:09,962] [MainThread  ] [DEBUG]  [F] Final result: что своеобразной
+[2021-08-18 08:51:15,186] [MainThread  ] [DEBUG]  [F] Final result: грозного
+[2021-08-18 08:51:24,286] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,454] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,464] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,468] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,565] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,567] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,719] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,723] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,791] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,797] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,977] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,982] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:24,984] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:25,031] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,230] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,321] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,323] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,325] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,486] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,538] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,541] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,543] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,739] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного
+[2021-08-18 08:51:25,842] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного материала
+[2021-08-18 08:51:25,846] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного материала
+[2021-08-18 08:51:25,997] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного материала
+[2021-08-18 08:51:26,032] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного материала
+[2021-08-18 08:51:26,033] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного материала
+[2021-08-18 08:51:26,036] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного материала
+[2021-08-18 08:51:26,260] [MainThread  ] [DEBUG]  [P] Partial result: тест своеобразного материала
+[2021-08-18 08:51:26,325] [MainThread  ] [DEBUG]  [F] Final result: тест своеобразного материала
+[2021-08-18 08:51:27,869] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:27,873] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:27,984] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:28,044] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:28,050] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:28,096] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:28,306] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:28,308] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:28,311] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:51:28,390] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:51:31,813] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:31,880] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:31,885] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:31,930] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,134] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,138] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,139] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,232] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,243] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,403] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,405] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:51:32,447] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,449] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,654] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,660] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,721] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,916] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,982] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,984] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:32,986] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:33,157] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:33,194] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:33,196] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:33,199] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:33,417] [MainThread  ] [DEBUG]  [P] Partial result: ты своеобразного
+[2021-08-18 08:51:33,463] [MainThread  ] [DEBUG]  [F] Final result: ты своеобразного
+[2021-08-18 08:51:36,082] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,230] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,233] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,234] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,272] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,549] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,553] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,554] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,654] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,742] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного
+[2021-08-18 08:51:36,791] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:36,793] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:36,795] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:37,060] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:37,125] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:37,129] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:37,254] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:37,258] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:37,261] [MainThread  ] [DEBUG]  [P] Partial result: своеобразного материала
+[2021-08-18 08:51:37,326] [MainThread  ] [DEBUG]  [F] Final result: тест своеобразного материала
+[2021-08-18 08:51:38,252] [MainThread  ] [DEBUG]  [P] Partial result: в общем
+[2021-08-18 08:51:38,256] [MainThread  ] [DEBUG]  [P] Partial result: в общем
+[2021-08-18 08:51:38,279] [MainThread  ] [DEBUG]  [P] Partial result: в общем
+[2021-08-18 08:51:38,578] [MainThread  ] [DEBUG]  [P] Partial result: вообще
+[2021-08-18 08:51:38,582] [MainThread  ] [DEBUG]  [P] Partial result: вообще
+[2021-08-18 08:51:38,762] [MainThread  ] [DEBUG]  [P] Partial result: в общем
+[2021-08-18 08:51:38,765] [MainThread  ] [DEBUG]  [P] Partial result: в общем
+[2021-08-18 08:51:38,766] [MainThread  ] [DEBUG]  [P] Partial result: в общем
+[2021-08-18 08:51:38,952] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:38,954] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:38,955] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:39,214] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:39,217] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:39,218] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:39,342] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:39,345] [MainThread  ] [DEBUG]  [P] Partial result: вообще никакого эффекта
+[2021-08-18 08:51:39,428] [MainThread  ] [DEBUG]  [F] Final result: вообще никакого эффекта
+[2021-08-18 08:51:41,207] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,209] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,211] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,350] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,455] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,458] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,461] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,606] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,610] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,662] [MainThread  ] [DEBUG]  [P] Partial result: никакому
+[2021-08-18 08:51:41,665] [MainThread  ] [DEBUG]  [P] Partial result: никакому
+[2021-08-18 08:51:41,862] [MainThread  ] [DEBUG]  [P] Partial result: никакому
+[2021-08-18 08:51:41,955] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,963] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:41,965] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:42,120] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:42,162] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:42,164] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:42,166] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:42,374] [MainThread  ] [DEBUG]  [P] Partial result: никакого
+[2021-08-18 08:51:42,478] [MainThread  ] [DEBUG]  [F] Final result: никакого
+[2021-08-18 08:52:18,019] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:52:18,212] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:52:18,217] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:52:18,263] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:52:18,265] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:52:18,474] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:52:18,478] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:52:18,567] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:52:18,726] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:52:18,731] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:52:18,819] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:18,826] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:18,991] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,036] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,038] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,237] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,314] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,320] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,323] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,499] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест
+[2021-08-18 08:52:19,562] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:19,564] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:19,567] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:19,751] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:19,840] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:19,847] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:19,856] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:20,012] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:20,092] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:20,104] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:20,262] [MainThread  ] [DEBUG]  [P] Partial result: тест тест тест тест
+[2021-08-18 08:52:20,305] [MainThread  ] [DEBUG]  [F] Final result: тест тест тест тест
+[2021-08-18 08:53:00,145] [MainThread  ] [DEBUG]  [P] Partial result: спросила
+[2021-08-18 08:53:00,205] [MainThread  ] [DEBUG]  [P] Partial result: спросила
+[2021-08-18 08:53:00,209] [MainThread  ] [DEBUG]  [P] Partial result: спросила
+[2021-08-18 08:53:00,212] [MainThread  ] [DEBUG]  [P] Partial result: спросила
+[2021-08-18 08:53:00,359] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,464] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,468] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,519] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,521] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,710] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,716] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,871] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,982] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,985] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:00,986] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:01,021] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:01,221] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:01,257] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:01,259] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:01,261] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:01,483] [MainThread  ] [DEBUG]  [P] Partial result: рассеиватель
+[2021-08-18 08:53:01,574] [MainThread  ] [DEBUG]  [F] Final result: с рассеиватель
+[2021-08-18 08:53:44,026] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,030] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,035] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,252] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,334] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,339] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,492] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,495] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,533] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,534] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,759] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:53:44,820] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:44,824] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:44,829] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,009] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,074] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,077] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,254] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,316] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,318] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,322] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:53:45,604] [MainThread  ] [DEBUG]  [F] Final result: тест тест
+[2021-08-18 08:53:46,164] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:53:46,276] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:53:46,279] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:53:46,282] [MainThread  ] [DEBUG]  [P] Partial result: ты
+[2021-08-18 08:53:50,471] [MainThread  ] [DEBUG]  [F] Final result: ты есть
+[2021-08-18 08:53:51,739] [MainThread  ] [DEBUG]  [P] Partial result: короче все
+[2021-08-18 08:53:51,742] [MainThread  ] [DEBUG]  [P] Partial result: короче все
+[2021-08-18 08:53:51,744] [MainThread  ] [DEBUG]  [P] Partial result: короче все
+[2021-08-18 08:53:51,909] [MainThread  ] [DEBUG]  [P] Partial result: короче все
+[2021-08-18 08:53:52,197] [MainThread  ] [DEBUG]  [P] Partial result: короче с этим
+[2021-08-18 08:53:52,206] [MainThread  ] [DEBUG]  [P] Partial result: короче с этим
+[2021-08-18 08:53:52,216] [MainThread  ] [DEBUG]  [P] Partial result: короче с этим
+[2021-08-18 08:53:52,481] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти важные
+[2021-08-18 08:53:52,484] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти важные
+[2021-08-18 08:53:52,605] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играть
+[2021-08-18 08:53:52,608] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играть
+[2021-08-18 08:53:52,684] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играть
+[2021-08-18 08:53:52,746] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:52,747] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:52,749] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:52,944] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,031] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,044] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,046] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,224] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,227] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,229] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,477] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,480] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,482] [MainThread  ] [DEBUG]  [P] Partial result: короче все эти можно играться
+[2021-08-18 08:53:53,803] [MainThread  ] [DEBUG]  [F] Final result: короче с этим можно играться
+[2021-08-18 08:54:44,019] [MainThread  ] [DEBUG]  [F] Final result: пробу
+[2021-08-18 08:54:54,759] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:54:54,762] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:54:54,764] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:54:54,926] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:54,928] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:54,930] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:55,233] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:55,236] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:55,269] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:55,396] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:55,400] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:55,401] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:54:55,459] [MainThread  ] [DEBUG]  [F] Final result: тест тест
+[2021-08-18 08:55:05,466] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:05,471] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:05,477] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:05,639] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:05,679] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:05,682] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:05,900] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:06,018] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:06,019] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:06,021] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:06,187] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:55:13,860] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:13,863] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:13,865] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,133] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,135] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,137] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,396] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,401] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,463] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,599] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,614] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,617] [MainThread  ] [DEBUG]  [P] Partial result: ну
+[2021-08-18 08:55:14,664] [MainThread  ] [DEBUG]  [F] Final result: ну
+[2021-08-18 08:55:25,743] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:25,747] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:25,751] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:26,000] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:26,002] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:26,053] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:26,114] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:26,116] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:26,119] [MainThread  ] [DEBUG]  [P] Partial result: конечно
+[2021-08-18 08:55:26,274] [MainThread  ] [DEBUG]  [F] Final result: это конечно
+[2021-08-18 08:55:41,402] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:55:42,356] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:42,357] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:42,499] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:42,501] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:42,551] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:42,553] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:42,765] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:42,867] [MainThread  ] [DEBUG]  [P] Partial result: даст вам
+[2021-08-18 08:55:42,868] [MainThread  ] [DEBUG]  [P] Partial result: даст вам
+[2021-08-18 08:55:42,871] [MainThread  ] [DEBUG]  [P] Partial result: даст вам
+[2021-08-18 08:55:43,011] [MainThread  ] [DEBUG]  [P] Partial result: даст вам
+[2021-08-18 08:55:43,115] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,117] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,119] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,280] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,321] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,322] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,325] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,534] [MainThread  ] [DEBUG]  [P] Partial result: тест вау
+[2021-08-18 08:55:43,646] [MainThread  ] [DEBUG]  [F] Final result: тест вау
+[2021-08-18 08:55:59,784] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:59,786] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:59,956] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:59,960] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:55:59,963] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:00,236] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:00,240] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:00,243] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:00,549] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:56:01,013] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,217] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,221] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,311] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,319] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,443] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,446] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,479] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,481] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,699] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,702] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,708] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:01,769] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:56:03,298] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,300] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,302] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,495] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,578] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,583] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,588] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,820] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,825] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:03,828] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:04,120] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:56:06,133] [MainThread  ] [DEBUG]  [P] Partial result: них
+[2021-08-18 08:56:06,135] [MainThread  ] [DEBUG]  [P] Partial result: них
+[2021-08-18 08:56:06,137] [MainThread  ] [DEBUG]  [P] Partial result: них
+[2021-08-18 08:56:06,343] [MainThread  ] [DEBUG]  [P] Partial result: них
+[2021-08-18 08:56:06,345] [MainThread  ] [DEBUG]  [P] Partial result: них
+[2021-08-18 08:56:06,448] [MainThread  ] [DEBUG]  [P] Partial result: не
+[2021-08-18 08:56:06,450] [MainThread  ] [DEBUG]  [P] Partial result: не
+[2021-08-18 08:56:06,452] [MainThread  ] [DEBUG]  [P] Partial result: не
+[2021-08-18 08:56:06,563] [MainThread  ] [DEBUG]  [P] Partial result: не
+[2021-08-18 08:56:06,626] [MainThread  ] [DEBUG]  [P] Partial result: нихуя
+[2021-08-18 08:56:06,628] [MainThread  ] [DEBUG]  [P] Partial result: нихуя
+[2021-08-18 08:56:06,630] [MainThread  ] [DEBUG]  [P] Partial result: нихуя
+[2021-08-18 08:56:06,829] [MainThread  ] [DEBUG]  [P] Partial result: нихуя
+[2021-08-18 08:56:06,879] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе
+[2021-08-18 08:56:06,880] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе
+[2021-08-18 08:56:06,882] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе
+[2021-08-18 08:56:07,075] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе
+[2021-08-18 08:56:07,165] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе и
+[2021-08-18 08:56:07,168] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе и
+[2021-08-18 08:56:07,169] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе и
+[2021-08-18 08:56:07,348] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе и
+[2021-08-18 08:56:07,424] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе
+[2021-08-18 08:56:07,428] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе
+[2021-08-18 08:56:07,430] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе
+[2021-08-18 08:56:07,641] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:07,643] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:07,645] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:07,946] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:07,948] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:07,950] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:08,135] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:08,140] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты
+[2021-08-18 08:56:08,216] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,368] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,371] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,373] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,432] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,633] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,637] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,638] [MainThread  ] [DEBUG]  [P] Partial result: нихуя себе эффекты тест
+[2021-08-18 08:56:08,680] [MainThread  ] [DEBUG]  [F] Final result: нихуя себе эффекты тест
+[2021-08-18 08:56:09,952] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:09,953] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:09,955] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:10,163] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:10,245] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:10,247] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:10,250] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:10,410] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:10,413] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:10,515] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:56:15,586] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:15,589] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:15,591] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:15,929] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:15,933] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:15,975] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,047] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,050] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,052] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,098] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:56:16,610] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,611] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,805] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,810] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,812] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:16,877] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:17,076] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:17,147] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:17,151] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:17,152] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:17,325] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:17,326] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:17,367] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:56:24,038] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,231] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,237] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,286] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,289] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,483] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,489] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,555] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,557] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,748] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,817] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,818] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,820] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,994] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:24,996] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:25,030] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:25,032] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:25,033] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:25,264] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:56:25,365] [MainThread  ] [DEBUG]  [F] Final result: есть
+[2021-08-18 08:56:30,159] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,162] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,163] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,414] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,417] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,700] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,703] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,705] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,954] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,958] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:30,960] [MainThread  ] [DEBUG]  [P] Partial result: даст
+[2021-08-18 08:56:31,197] [MainThread  ] [DEBUG]  [F] Final result: даст
+[2021-08-18 08:56:32,022] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,162] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,164] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,213] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,214] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,422] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,424] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,457] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,459] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,674] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:56:32,719] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:56:44,838] [MainThread  ] [DEBUG]  [P] Partial result: накрыть
+[2021-08-18 08:56:44,841] [MainThread  ] [DEBUG]  [P] Partial result: накрыть
+[2021-08-18 08:56:44,843] [MainThread  ] [DEBUG]  [P] Partial result: накрыть
+[2021-08-18 08:56:44,961] [MainThread  ] [DEBUG]  [P] Partial result: накрыть
+[2021-08-18 08:56:45,063] [MainThread  ] [DEBUG]  [P] Partial result: накрыть
+[2021-08-18 08:56:45,065] [MainThread  ] [DEBUG]  [P] Partial result: накрыть
+[2021-08-18 08:56:45,067] [MainThread  ] [DEBUG]  [P] Partial result: накрыть
+[2021-08-18 08:56:47,992] [MainThread  ] [DEBUG]  [F] Final result: накрыть сфер
+[2021-08-18 08:57:02,978] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:57:07,289] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,291] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,293] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,490] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,556] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,558] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,560] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,758] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,794] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,796] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:07,798] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:08,004] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:08,074] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:08,077] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:08,081] [MainThread  ] [DEBUG]  [P] Partial result: то есть
+[2021-08-18 08:57:08,328] [MainThread  ] [DEBUG]  [F] Final result: то есть
+[2021-08-18 08:57:28,036] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:28,040] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:28,075] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:28,226] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:28,231] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:28,232] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:28,238] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:28,283] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,482] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,486] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,572] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,574] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,738] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,741] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,743] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,779] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,781] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,994] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:28,996] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:29,044] [MainThread  ] [DEBUG]  [F] Final result: тест тест
+[2021-08-18 08:57:31,104] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,105] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,106] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,394] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,397] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,400] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,674] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,677] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,679] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:31,868] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:57:39,552] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:39,555] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:39,589] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:39,746] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:39,750] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:39,751] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:39,870] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:40,002] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:40,006] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:40,072] [MainThread  ] [DEBUG]  [P] Partial result: текст песни
+[2021-08-18 08:57:40,074] [MainThread  ] [DEBUG]  [P] Partial result: текст песни
+[2021-08-18 08:57:40,259] [MainThread  ] [DEBUG]  [P] Partial result: текст песни
+[2021-08-18 08:57:40,263] [MainThread  ] [DEBUG]  [P] Partial result: текст песни
+[2021-08-18 08:57:40,320] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:40,322] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:40,514] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:40,517] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:40,585] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:40,588] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:40,771] [MainThread  ] [DEBUG]  [P] Partial result: тест тест
+[2021-08-18 08:57:40,855] [MainThread  ] [DEBUG]  [F] Final result: тест тест
+[2021-08-18 08:57:42,658] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:42,663] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:42,665] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:42,850] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:42,853] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:42,855] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:57:43,135] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:58:14,096] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:58:14,099] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:58:14,173] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:58:14,305] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:58:14,309] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:58:14,311] [MainThread  ] [DEBUG]  [P] Partial result: тест
+[2021-08-18 08:58:14,368] [MainThread  ] [DEBUG]  [F] Final result: тест
+[2021-08-18 08:59:52,294] [MainThread  ] [INFO ]  [-] Stop handle for ip: 192.168.8.197, port: 40192
+[2021-08-18 09:00:02,436] [MainThread  ] [INFO ]  [X] Shutting down

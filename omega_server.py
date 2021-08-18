@@ -6,12 +6,12 @@ import logging
 import argparse
 import socket
 import json
-import pyaudio
+#import pyaudio
 import asyncio
 import vosk
 
 
-FORMAT = pyaudio.paInt16
+#FORMAT = pyaudio.paInt16
 MODEL = 'model'
 LOGLEVEL = logging.DEBUG
 LOGFILE = 'station_server.log'
@@ -81,8 +81,8 @@ class OmegaServer:
                  partial_result = json_output["partial"]
                  if partial_result:
                      log.debug('[P] Partial result: %s' % partial_result)
-             if args.broadcast:
-                 stream.write(data)
+             #if args.broadcast:
+             #    stream.write(data)
              #response = str(eval(request)) + '\n'
              #writer.write(response.encode('utf8'))
              #await writer.drain()
@@ -109,10 +109,10 @@ class OmegaServer:
             }
         self.config = config
 
-        if args.broadcast:
-            audio = pyaudio.PyAudio()
-            stream = audio.open(format=FORMAT, channels=self.config['client_channels'], rate=self.config['rate'], 
-                                output=True, frames_per_buffer=self.config['chunk'])
+        #if args.broadcast:
+            #audio = pyaudio.PyAudio()
+            #stream = audio.open(format=FORMAT, channels=self.config['client_channels'], rate=self.config['rate'], 
+            #                    output=True, frames_per_buffer=self.config['chunk'])
 
         model = vosk.Model(MODEL)
         self.rec = vosk.KaldiRecognizer(model, self.config['rate'])
@@ -123,9 +123,9 @@ class OmegaServer:
             pass
 
         log.info('[X] Shutting down')
-        if args.broadcast:
-            stream.close()
-            audio.terminate()
+        #if args.broadcast:
+            #stream.close()
+            #audio.terminate()
 
 
 if __name__ == '__main__':
