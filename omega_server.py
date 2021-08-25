@@ -9,13 +9,15 @@ import json
 #import pyaudio
 import asyncio
 import vosk
+import request_test
 
 
 #FORMAT = pyaudio.paInt16
 MODEL = 'model'
 LOGLEVEL = logging.DEBUG
 LOGFILE = 'station_server.log'
-
+ACTIVATIONWORD = 'омега'
+#ACTIVATIONWORD = ''
 
 logFormatter = logging.Formatter("[%(asctime)s] [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")
 log = logging.getLogger()
@@ -75,6 +77,12 @@ class OmegaServer:
                  final_result = json_output["text"]
                  if final_result:
                      log.debug('[F] Final result: %s' % final_result)
+                     if final_result.find(ACTIVATIONWORD) != -1:
+                         word_list = final_result.split()
+                         tokens_without_activation = [x for x in word_list if x not in ACTIVATIONWORD]
+                         request_test.request_krionard(tokens_without_activation)
+                     else:
+                         log.debug('[X] Request not sent, missing activation word!')
              else:
                  output = self.rec.PartialResult()
                  json_output = json.loads(output)
