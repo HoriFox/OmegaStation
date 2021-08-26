@@ -9,7 +9,7 @@ import json
 #import pyaudio
 import asyncio
 import vosk
-import request_test
+import krionard_request
 
 
 #FORMAT = pyaudio.paInt16
@@ -77,10 +77,15 @@ class OmegaServer:
                  final_result = json_output["text"]
                  if final_result:
                      log.debug('[F] Final result: %s' % final_result)
-                     if final_result.find(ACTIVATIONWORD) != -1:
-                         word_list = final_result.split()
-                         tokens_without_activation = [x for x in word_list if x not in ACTIVATIONWORD]
-                         request_test.request_krionard(tokens_without_activation)
+                     aword_position = final_result.rfind(ACTIVATIONWORD)
+                     if aword_position != -1:
+                         # Take the last array of the command [omega command item OMEGA COMMAND ITEM] - take that capslock
+                         tokens_without_activation = final_result[aword_position + len(ACTIVATIONWORD) + 1:].split()
+                         print('tokens_without_activation', tokens_without_activation)
+                         response = krionard_request.request_krionard(tokens_without_activation)
+                         print('Send text response to client: "%s"' % response.split('\n')[0])
+                         writer.write(response.encode('utf8'))
+                         await writer.drain()
                      else:
                          log.debug('[X] Request not sent, missing activation word!')
              else:

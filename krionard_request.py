@@ -25,8 +25,7 @@ def request_krionard(tokens):
 }'''
     print(json_input_string)
     response = requests.post('%s://%s/' % (PATTERN_URL, URL), json=json.loads(json_input_string))
-    print('Response: ', response)
+    print('Status: ', response)
     json_response = json.loads(response.text)
-    #print(json.dumps(json_response, indent=4, sort_keys=True))
-    print(json_response)
-    #print('Content: ', response.content)
+    print('Json response: ', json_response)
+    return json_response['response']['text'] + '\n'
