@@ -46,11 +46,11 @@ if __name__ == "__main__":
     service_config = load_config(args.config)
     if platform.platform() == PLATFORM_PROD:
         print('[LAUNCH] Launch client service')
-        from omega_client import OmegaClient
+        from client import OmegaClient
         service = OmegaClient()
         service.client_service(service_config)
     else:
         print('[LAUNCH] Launch server service')
-        from omega_server import OmegaServer
+        from server import OmegaServer
         service = OmegaServer()
         service.server_service(service_config)
