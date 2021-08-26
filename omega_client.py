@@ -7,7 +7,7 @@ import logging
 import sounddevice as sd
 import numpy as np
 from rpi_ws281x import *
-from led_tools import LEDAnimation
+from led_tools import LEDAnimation, ColorPro
 
 LOGLEVEL = logging.DEBUG
 LOGFILE = 'station_client.log'
@@ -63,12 +63,18 @@ args = parser.parse_args(remaining)
 
 
 class OmegaClient:
+
+    min_volume = 0
+    max_volume = 100
+    negative_density_bias = 6
+
     def __init__(self):
         pass
 
     def callback(self, in_data, frames, time, status):
         """This is called (from a separate thread) for each audio block."""
-        volume = min(int(np.linalg.norm(in_data) * 0.0002), 100)
+        sound_density = int(np.linalg.norm(in_data) * 0.0002) * 2 - self.negative_density_bias
+        volume = max(self.min_volume, min(sound_density, self.max_volume))
         self.led_service.sound_volume = volume
         self.clientsocket.send(in_data)
 
@@ -91,7 +97,7 @@ class OmegaClient:
         self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.clientsocket.connect((config['address'], config['port']))
 
-        self.led_service = LEDAnimation(Color(0, 0, 255))
+        self.led_service = LEDAnimation(ColorPro(0, 0, 255))
         self.led_service.run()
 
         rawInputStream = sd.InputStream(samplerate=config['rate'], blocksize=config['chunk'], device=config['client_device'],
@@ -102,7 +108,12 @@ class OmegaClient:
         try:
             self.led_service.state = 'visualization'
             while True:
-                pass
+                responce_all = self.clientsocket.recv(4096).decode('utf8')
+                responce_parts = responce_all.split('\n')
+                responce = responce_parts[0]
+                if len(responce_parts[1]) != 0:
+                    log.warning('The package crashed, responce all: %s' % responce_all)
+                self.led_service.signal_queue.append(('heil', {'color':ColorPro(0, 255, 0)}))
                 #self.led_service.state = 'loading'
                 #time.sleep(2)
                 #self.led_service.signal_queue.append('heil')
