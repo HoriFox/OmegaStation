@@ -100,15 +100,15 @@ class OmegaClient:
 
         log.debug('[INFO] Press Ctrl+C to stop send microphone stream')
         try:
-            #led_service = LEDAnimation(Color(0, 0, 255))
-            #led_service.run()
+            self.led_service.state = 'visualization'
             while True:
-                self.led_service.state = 'loading'
-                time.sleep(2)
-                self.led_service.signal_queue.append('heil')
-                time.sleep(2)
-                self.led_service.state = 'visualization'
-                time.sleep(10)
+                pass
+                #self.led_service.state = 'loading'
+                #time.sleep(2)
+                #self.led_service.signal_queue.append('heil')
+                #time.sleep(2)
+                #self.led_service.state = 'visualization'
+                #time.sleep(10)
         except KeyboardInterrupt:
             pass
         log.info("[X] Stop client OMEGA station")

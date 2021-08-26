@@ -249,3 +249,109 @@
 [2021-08-18 06:59:49,144] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
 [2021-08-18 06:59:52,273] [MainThread  ] [DEBUG]  [X] Send quit message
 [2021-08-18 06:59:55,279] [MainThread  ] [DEBUG]  [X] Close socket
+[2021-08-18 07:56:31,729] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-18 07:56:31,734] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-18 07:56:31,741] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-18 07:56:32,072] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-18 08:03:38,414] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-18 08:03:41,565] [MainThread  ] [DEBUG]  [X] Send quit message
+[2021-08-18 08:03:44,573] [MainThread  ] [DEBUG]  [X] Close socket
+[2021-08-18 15:49:14,485] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-18 15:49:14,491] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-18 15:49:14,496] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-18 15:49:14,862] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-18 21:19:48,909] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-18 21:19:52,056] [MainThread  ] [DEBUG]  [X] Send quit message
+[2021-08-18 21:19:55,063] [MainThread  ] [DEBUG]  [X] Close socket
+[2021-08-18 21:41:15,670] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-18 21:41:15,677] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-18 21:41:15,684] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-18 21:41:16,118] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-18 21:45:07,476] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-18 21:45:10,482] [MainThread  ] [DEBUG]  [X] Send quit message
+[2021-08-25 22:58:14,642] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-25 22:58:14,648] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-25 22:58:14,655] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-25 22:58:15,076] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-25 22:58:26,072] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-25 22:58:29,086] [MainThread  ] [DEBUG]  [X] Send quit message
+[2021-08-25 22:58:32,097] [MainThread  ] [DEBUG]  [X] Close socket
+[2021-08-25 23:03:46,206] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-25 23:03:46,211] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-25 23:03:46,217] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-25 23:04:01,391] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-25 23:04:01,395] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-25 23:04:01,401] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-25 23:04:01,736] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-25 23:04:15,146] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-25 23:04:18,304] [MainThread  ] [DEBUG]  [X] Send quit message
+[2021-08-26 00:17:18,888] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:17:18,893] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:17:18,898] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:17:19,236] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:17:32,895] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:17:56,301] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:17:56,305] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:17:56,310] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:17:56,636] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:18:12,129] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:19:38,173] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:19:38,178] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:19:38,183] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:19:38,516] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:19:51,561] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:20:39,768] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:20:39,772] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:20:39,778] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:20:40,106] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:22:06,279] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:24:44,798] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:24:44,802] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:24:44,808] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:24:45,136] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:29:38,319] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:29:46,666] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:29:46,671] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:29:46,677] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:29:47,016] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:32:34,438] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:32:42,513] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:32:42,517] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:32:42,522] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:32:42,856] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:37:16,228] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:37:44,110] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:37:44,115] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:37:44,120] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:37:44,556] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:40:40,127] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:40:48,437] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:40:48,442] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:40:48,446] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:40:48,776] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:41:52,622] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:42:00,733] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:42:00,737] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:42:00,743] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:42:01,076] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:44:09,124] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:44:17,467] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:44:17,472] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:44:17,478] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:44:17,806] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:47:44,574] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:47:52,777] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:47:52,782] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:47:52,786] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:47:53,116] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:49:10,283] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:49:18,563] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:49:18,567] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:49:18,572] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:49:18,906] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:50:02,709] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
+[2021-08-26 00:50:14,445] [MainThread  ] [INFO ]  [+] Start client OMEGA station
+[2021-08-26 00:50:14,450] [MainThread  ] [INFO ]  [INFO] Device information | Device: 0 | Channels: 1 | Rate: 16000
+[2021-08-26 00:50:14,455] [MainThread  ] [INFO ]  [INFO] Connection information | Address: 192.168.8.61 | Port: 4444
+[2021-08-26 00:50:14,796] [MainThread  ] [DEBUG]  [INFO] Press Ctrl+C to stop send microphone stream
+[2021-08-26 00:53:23,416] [MainThread  ] [INFO ]  [X] Stop client OMEGA station
