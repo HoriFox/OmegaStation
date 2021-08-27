@@ -68,15 +68,50 @@ class OmegaClient:
     max_volume = 100
     negative_density_bias = 6
 
+    #Tech var
+    _config = None
+    _is_connected = False
+
+
     def __init__(self):
         pass
+
 
     def callback(self, in_data, frames, time, status):
         """This is called (from a separate thread) for each audio block."""
         sound_density = int(np.linalg.norm(in_data) * 0.0002) * 2 - self.negative_density_bias
         volume = max(self.min_volume, min(sound_density, self.max_volume))
         self.led_service.sound_volume = volume
-        self.clientsocket.send(in_data)
+        try:
+            self.clientsocket.send(in_data)
+        except BrokenPipeError as bpe:
+            log.warning('The server has probably crashed. Error message: %s' % bpe)
+            self.connect_server()
+
+
+    def connect_server(self):
+        config = self._config
+        timeout_connection = 4
+        if self._is_connected:
+            self.clientsocket.close()
+            self._is_connected = False
+        self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        while True:
+            try:
+                log.debug('Try to connect...')
+                self.clientsocket.connect((config['address'], config['port']))
+            except ConnectionRefusedError as cre:
+                log.warning('Server side don`t up. Error message: %s' % cre)
+            except Exception as ex:
+                log.warning('Unexpected connection error. Error message: %s' % ex)
+                exit()
+            else:
+                log.debug('Successful connection')
+                self._is_connected = True
+                break
+            #if timeout_connection < 300: timeout_connection *= 2
+            log.debug('Timeout connection: %s sec' % timeout_connection)
+            time.sleep(timeout_connection)
 
 
     def client_service(self, config = None):
@@ -90,12 +125,14 @@ class OmegaClient:
                 'chunk': 4096,
             }
 
-        log.info('[+] Start client OMEGA station')
-        log.info('[INFO] Device information | Device: %s | Channels: %s | Rate: %s' % (config['client_device'], config['client_channels'], config['rate']))
-        log.info('[INFO] Connection information | Address: %s | Port: %s' % (config['address'], config['port']))
+        self._config = config
 
-        self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.clientsocket.connect((config['address'], config['port']))
+        log.info('[+] Start client OMEGA station')
+        log.info('Device information | Device: %s | Channels: %s | Rate: %s' % (config['client_device'], config['client_channels'], config['rate']))
+        log.info('Connection information | Address: %s | Port: %s' % (config['address'], config['port']))
+
+        #self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.connect_server()
 
         self.led_service = LEDAnimation(ColorPro(0, 0, 255))
         self.led_service.run()
@@ -104,22 +141,19 @@ class OmegaClient:
                                        dtype='int16', channels=config['client_channels'], callback=self.callback)
         rawInputStream.start()
 
-        log.debug('[INFO] Press Ctrl+C to stop send microphone stream')
+        log.info('Press Ctrl+C to stop send microphone stream')
         try:
             self.led_service.state = 'visualization'
             while True:
-                responce_all = self.clientsocket.recv(4096).decode('utf8')
-                responce_parts = responce_all.split('\n')
-                responce = responce_parts[0]
-                if len(responce_parts[1]) != 0:
-                    log.warning('The package crashed, responce all: %s' % responce_all)
-                self.led_service.signal_queue.append(('heil', {'color':ColorPro(0, 255, 0)}))
-                #self.led_service.state = 'loading'
-                #time.sleep(2)
-                #self.led_service.signal_queue.append('heil')
-                #time.sleep(2)
-                #self.led_service.state = 'visualization'
-                #time.sleep(10)
+                if self._is_connected:
+                    responce_all = self.clientsocket.recv(4096).decode('utf8')
+                    if responce_all:
+                        responce_parts = responce_all.split('\n')
+                        responce = responce_parts[0]
+                        if len(responce_parts[1]) != 0:
+                            log.warning('The package crashed, responce all: %s' % responce_all)
+                        log.debug('<<< Responce text: %s' % responce)
+                        self.led_service.signal_queue.append(('heil', {'color':ColorPro(0, 255, 0)}))
         except KeyboardInterrupt:
             pass
         log.info("[X] Stop client OMEGA station")
