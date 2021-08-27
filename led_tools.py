@@ -40,6 +40,7 @@ class LEDAnimation:
     sound_volume = 0
 
     #Tech var
+    _thread_loop = False
     _last_state = None
     _smooth_sound_volume = 0
     #state_switch = {'idle' : idle,
@@ -109,6 +110,11 @@ class LEDAnimation:
              self._smooth_sound_volume += change_path_value
 
 
+    def clear(self):
+        for i in range(self.strip.numPixels()):
+            self.strip.setPixelColor(i, ColorPro(0,0,0).color())
+        self.strip.show()
+
     def switch(self, signal):
         action, param = signal
         if action == 'idle':
@@ -122,22 +128,24 @@ class LEDAnimation:
 
 
     def led_loop(self):
-        while True:
+        while self._thread_loop:
             while len(self.signal_queue) > 0:
                 self.switch(self.signal_queue.pop())
             #if self._last_state != self.state:
             #    self.transition
             self.switch((self.state, None))
             #self.state_switch[self.state]()
-
+        self.clear()
 
     def run(self):
         self.led_thread = Thread(target=self.led_loop)
+        self._thread_loop = True
         self.led_thread.start()
 
 
     def stop(self):
-        self.led_thread.join()
+        self._thread_loop = False
+        #self.led_thread.join()
 
 if __name__ == '__main__':
     led = LEDAnimation(ColorPro(0, 255, 0))

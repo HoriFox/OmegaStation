@@ -71,22 +71,23 @@ class OmegaClient:
     #Tech var
     _config = None
     _is_connected = False
-
+    _error_connection = False
 
     def __init__(self):
         pass
 
 
     def callback(self, in_data, frames, time, status):
-        """This is called (from a separate thread) for each audio block."""
-        sound_density = int(np.linalg.norm(in_data) * 0.0002) * 2 - self.negative_density_bias
-        volume = max(self.min_volume, min(sound_density, self.max_volume))
-        self.led_service.sound_volume = volume
-        try:
-            self.clientsocket.send(in_data)
-        except BrokenPipeError as bpe:
-            log.warning('The server has probably crashed. Error message: %s' % bpe)
-            self.connect_server()
+        if not self._error_connection:
+            """This is called (from a separate thread) for each audio block."""
+            sound_density = int(np.linalg.norm(in_data) * 0.0002) * 2 - self.negative_density_bias
+            volume = max(self.min_volume, min(sound_density, self.max_volume))
+            self.led_service.sound_volume = volume
+            try:
+                self.clientsocket.send(in_data)
+            except BrokenPipeError as bpe:
+                log.warning('The server has probably crashed. Error message: %s' % bpe)
+                self._error_connection = True
 
 
     def connect_server(self):
@@ -108,8 +109,9 @@ class OmegaClient:
             else:
                 log.debug('Successful connection')
                 self._is_connected = True
+                self._error_connection = False
                 break
-            #if timeout_connection < 300: timeout_connection *= 2
+            if timeout_connection < 60: timeout_connection *= 2
             log.debug('Timeout connection: %s sec' % timeout_connection)
             time.sleep(timeout_connection)
 
@@ -145,7 +147,7 @@ class OmegaClient:
         try:
             self.led_service.state = 'visualization'
             while True:
-                if self._is_connected:
+                if not self._error_connection:
                     responce_all = self.clientsocket.recv(4096).decode('utf8')
                     if responce_all:
                         responce_parts = responce_all.split('\n')
@@ -154,18 +156,22 @@ class OmegaClient:
                             log.warning('The package crashed, responce all: %s' % responce_all)
                         log.debug('<<< Responce text: %s' % responce)
                         self.led_service.signal_queue.append(('heil', {'color':ColorPro(0, 255, 0)}))
+                else:
+                    self.connect_server()
         except KeyboardInterrupt:
             pass
         log.info("[X] Stop client OMEGA station")
 
         rawInputStream.stop()
         time.sleep(3)
-        log.debug('[X] Send quit message')
-        self.clientsocket.send(b'quit')
-        time.sleep(3)
+        if not self._error_connection:
+            log.debug('[X] Send quit message')
+            self.clientsocket.send(b'quit')
+            time.sleep(3)
         log.debug('[X] Close socket')
         self.clientsocket.close()
-
+        log.debug('[X] Stop led service')
+        self.led_service.stop()
 
 if __name__ == '__main__':
     service = OmegaClient()
