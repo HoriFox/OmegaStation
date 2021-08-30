@@ -99,7 +99,7 @@ class OmegaClient:
         self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         while True:
             try:
-                log.debug('Try to connect...')
+                log.debug('Try to connect to %s:%s' % (config['address'], config['port']))
                 self.clientsocket.connect((config['address'], config['port']))
             except ConnectionRefusedError as cre:
                 log.warning('Server side don`t up. Error message: %s' % cre)
@@ -107,12 +107,12 @@ class OmegaClient:
                 log.warning('Unexpected connection error. Error message: %s' % ex)
                 exit()
             else:
-                log.debug('Successful connection')
+                log.debug('Successful connection to %s:%s' % (config['address'], config['port']))
                 self._is_connected = True
                 self._error_connection = False
                 break
             if timeout_connection < 60: timeout_connection *= 2
-            log.debug('Timeout connection: %s sec' % timeout_connection)
+            log.debug('Timeout  connection retry %s sec' % timeout_connection)
             time.sleep(timeout_connection)
 
 
@@ -152,20 +152,22 @@ class OmegaClient:
                     if responce_all:
                         responce_parts = responce_all.split('\n')
                         responce = responce_parts[0]
-                        if len(responce_parts[1]) != 0:
+                        code = int(responce_parts[1])
+                        if len(responce_parts[2]) != 0:
                             log.warning('The package crashed, responce all: %s' % responce_all)
-                        log.debug('<<< Responce text: %s' % responce)
-                        self.led_service.signal_queue.append(('heil', {'color':ColorPro(0, 255, 0)}))
+                        log.debug('[<] Responce text: %s' % responce)
+                        color = ColorPro(0, 255, 0) if code in (1, 4, 0, 5, 7) else ColorPro(255, 0, 0)
+                        self.led_service.signal_queue.append(('heil', {'color':color}))
                 else:
                     self.connect_server()
         except KeyboardInterrupt:
             pass
-        log.info("[X] Stop client OMEGA station")
 
+        log.info("[X][~3 sec] Stop client OMEGA station")
         rawInputStream.stop()
         time.sleep(3)
         if not self._error_connection:
-            log.debug('[X] Send quit message')
+            log.debug('[X][~3 sec] Send quit message')
             self.clientsocket.send(b'quit')
             time.sleep(3)
         log.debug('[X] Close socket')
