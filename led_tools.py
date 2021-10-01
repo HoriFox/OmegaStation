@@ -78,6 +78,7 @@ class LEDAnimation:
 
 
     def heil(self, param):
+        brightness = 30
         color_pro = param['color'] if param and 'color' in param else self.color
         l_wait_ms = 5
         l_iteration = 2
@@ -86,17 +87,18 @@ class LEDAnimation:
             smooth_sep = 1 / smooth_value
             for i in range(smooth_value):
                 for q in range(self.strip.numPixels()):
-                    self.strip.setPixelColor(q, color_pro.color(alpha=(smooth_sep * i)))
+                    self.strip.setPixelColor(q, color_pro.color(alpha=((smooth_sep * i) / 100 * brightness)))
                 self.strip.show()
                 time.sleep(l_wait_ms/1000.0)
             for i in range(smooth_value, 0, -1):
                 for q in range(self.strip.numPixels()):
-                     self.strip.setPixelColor(q, color_pro.color(alpha=(smooth_sep * (i - 1))))
+                     self.strip.setPixelColor(q, color_pro.color(alpha=((smooth_sep * (i - 1)) / 100 * brightness)))
                 self.strip.show()
                 time.sleep(l_wait_ms/1000.0)
 
 
     def visualization(self, param):
+         brightness = 30
          color_pro = param['color'] if param and 'color' in param else self.color
          l_wait_ms = 5
          change_value = self.sound_volume - self._smooth_sound_volume
@@ -104,7 +106,7 @@ class LEDAnimation:
          change_path_value = change_value / l_smooth_value
          for smooth_i in range(l_smooth_value):
              for q in range(self.strip.numPixels()):
-                 self.strip.setPixelColor(q, color_pro.color(self._smooth_sound_volume * 2.55 / 255))
+                 self.strip.setPixelColor(q, color_pro.color(alpha=(self._smooth_sound_volume / 10000 * brightness)))
              self.strip.show()
              time.sleep(l_wait_ms/1000.0)
              self._smooth_sound_volume += change_path_value
