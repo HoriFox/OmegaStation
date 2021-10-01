@@ -24,8 +24,13 @@ def request_krionard(tokens):
   "version": "1.0"
 }'''
     print(json_input_string)
-    response = requests.post('%s://%s/' % (PATTERN_URL, URL), json=json.loads(json_input_string))
+    try:
+        response = requests.post('%s://%s/omega/' % (PATTERN_URL, URL), json=json.loads(json_input_string))
+    except Exception as ex:
+        print('Error request to krionard:', ex)
+        return ('Error request omega server to krionard\n', -1)
     print('Status: ', response)
     json_response = json.loads(response.text)
     print('Json response: ', json_response)
-    return json_response['response']['text'] + '\n'
+    print('Code:', json_response['response']['code'])
+    return (json_response['response']['tts'] + '\n' + str(json_response['response']['code']) + '\n')
