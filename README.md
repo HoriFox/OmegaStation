@@ -17,9 +17,10 @@
 * Device: 0 (номер звуковой карты в sounddevice)
 
 **Минимум запуска**  
-1. Модифицировать конфигурационный файл
-2. Запустить на сервере (raspberry pi 4) и клиент (raspberry zero w):  
-`python3 station_service.py`  
+1. Укладка в /usr/bin/local/omegastation  
+2. Запуск `sudo bash setup_systemd.sh`  
+3. Запустить на сервере (raspberry pi 4) и клиенте (raspberry zero w):  
+`sudo systemctl start omegastation.service`  
 
 **Зависимости - звуковая карта**  
 * Сервер:  
