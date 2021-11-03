@@ -34,7 +34,7 @@ def load_config(path):
 
 parser = argparse.ArgumentParser(description='Omega station launcher')
 parser.add_argument('-c', '--config', type=str,
-                    default='station.config.json',
+                    default='/usr/local/bin/omegastation/station.config.json',
                     help='Config file for Omega station')
 parser.add_argument('-d', '--debug', action='store_true',
                     help='Debug mode')

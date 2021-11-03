@@ -10,7 +10,7 @@ from rpi_ws281x import *
 from led_tools import LEDAnimation, ColorPro
 
 LOGLEVEL = logging.DEBUG
-LOGFILE = 'log/station_client.log'
+LOGFILE = '/var/log/omegastation/station_client.log'
 
 
 logFormatter = logging.Formatter("[%(asctime)s] [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")

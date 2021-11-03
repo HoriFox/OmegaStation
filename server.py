@@ -15,7 +15,7 @@ import krionard_request
 #FORMAT = pyaudio.paInt16
 MODEL = 'model'
 LOGLEVEL = logging.DEBUG
-LOGFILE = 'log/station_server.log'
+LOGFILE = '/var/log/omegastation/station_server.log'
 ACTIVATIONWORD = 'омега'
 #ACTIVATIONWORD = ''
 
