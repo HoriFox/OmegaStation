@@ -1,6 +1,9 @@
-# OmegaStation  
-**Описание**  
-Умная станция/колонка комлекса умный дом
+<img src="https://github.com/HoriFox/SmartHomeCentralDoc/blob/main/gitimg/omegastation_logo.png" width="500">
+
+## OmegaStation - Умная станция/колонка комлекса умный дом
+
+## Схема
+![Схема](https://github.com/HoriFox/SmartHomeCentralDoc/blob/main/gitimg/system.png)
 
 **Архитектура**
 
