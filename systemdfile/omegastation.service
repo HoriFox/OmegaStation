@@ -1,0 +1,22 @@
+[Unit]
+Description=OmegaStation service
+After=syslog.target network.target
+SyslogFacility=local0
+
+[Service]
+User=pi
+SyslogIdentifier=omegastation-app
+SyslogFacility=local0
+SyslogLevel=info
+Type=simple
+Restart=always
+StartLimitBurst=3
+StartLimitIntervalSec=30
+KillSignal=SIGINT
+#ExecStartPre=/bin/mkdir -p /run/uwsgi
+#ExecStartPre=/bin/chown -R uwsgi:uwsgi /run/uwsgi
+ExecStart=/usr/bin/python3 /usr/local/bin/omegastation/station_service.py
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
